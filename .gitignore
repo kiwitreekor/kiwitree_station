@@ -45,3 +45,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# archive files
+*.grf
+*.new
+archives/*
+build_l.bat
+*.tar
