@@ -71,27 +71,24 @@ echo.
 echo (2) 압축
 echo ─────────────────────────────
 if exist "newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar" del "newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar"
-"%homedrive%Program Files\Bandizip\bc.exe" a "newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar" "newsta.grf" "changelog.txt" "readme.txt"
+"C:\Program Files\Bandizip\bc.exe" a "newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar" "newsta.grf" "changelog.txt" "readme.txt"
 echo ─────────────────────────────
 echo.
 echo.
 echo.
 
 :copy_grf
-set /P WILL_YOU_COPY="내 문서/OpenTTD에 NewGRF를 복사하시겠습니까? [Y/N] ..... "
 
 if not exist %homedrive%%homepath%\documents\OpenTTD\ (
 echo 내 문서/OpenTTD가 존재하지 않습니다.
 goto stop_process
 )
 
-if %WILL_YOU_COPY% == y (
-	if %MENU% == 1 (
-		copy /Y newsta.grf %homedrive%%homepath%\documents\OpenTTD\NewGRF\newsta.grf
-	)
-	if %MENU% == 2 (
+if %MENU% == 1 (
+	copy /Y newsta.grf %homedrive%%homepath%\documents\OpenTTD\NewGRF\newsta.grf
+)
+if %MENU% == 2 (
 		copy /Y "newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar" "%homedrive%%homepath%\documents\OpenTTD\NewGRF\newsta_v%KSS_VERSION%_r%KSS_REVISION%.tar"
-	)
 )
 
 
