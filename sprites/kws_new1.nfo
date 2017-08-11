@@ -7,7 +7,7 @@
     0 * 4	 04 01 00 00
 // @@LINT OFF
 // @@BEAUTIFY OFF
-    1 * 341	 14 "C" "INFO"
+    1 * 396	 14 "C" "INFO"
 				"T" "NAME" 3A C3 9E
 						ED 82 A4 EC 9C 84 ED 8A B8 EB A6 AC 20 ED 95 9C EA B5 AD EC 97 AD 20 EC 84 B8 ED 8A B8 " v0.5-alpha" 00
 				"T" "DESC" 3A C3 9E
@@ -23,10 +23,12 @@
 						EB 8B A4 2E 20 EC 97 85 EB 8D B0 EC 9D B4 ED 8A
 						B8 20 EC 8B 9C 20 EC A3 BC EC 9D 98 ED 95 98 EC
 						8B AD EC 8B 9C EC 98 A4 "." 0D 0D
-						89 EC 86 8C EC 8A A4 ": \94https://github.com/kiwitreekor/kiwitree_station/" 00 00 00
+						89 EC 86 8C EC 8A A4 ": \94https://github.com/kiwitreekor/kiwitree_station/" 00
+				"T" "URL_" 7F 
+						"https://github.com/kiwitreekor/kiwitree_station/" 00 00 00
     2 * 38	 14 "C" "INFO" 
 					"B" "PALS" \w1 "W"
-					"B" "VRSN" \w4 \d615
+					"B" "VRSN" \w4 \d616
 					"B" "MINV" \w4 \d604
 					00
 				00
