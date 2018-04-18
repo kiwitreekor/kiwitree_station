@@ -28,7 +28,7 @@
 						"https://github.com/kiwitreekor/kiwitree_station/" 00 00 00
     2 * 38	 14 "C" "INFO" 
 					"B" "PALS" \w1 "W"
-					"B" "VRSN" \w4 \d619
+					"B" "VRSN" \w4 \d620
 					"B" "MINV" \w4 \d604
 					00
 				00
@@ -147,10 +147,10 @@
    48 sprites/roofs.png        8bpp  60  10 44 20 -11  -2 normal
    49 sprites/roofs.png        8bpp 110  10 44 26 -31  -5 normal //roof A, platform B             0455
    50 sprites/roofs.png        8bpp 160  10 44 26 -11  -5 normal
-   51 sprites/roofs.png        8bpp  10 200 44 24 -31  -5 normal //roof B, platform A             0457
-   52 sprites/roofs.png        8bpp  60 200 44 24 -11  -5 normal
-   53 sprites/roofs.png        8bpp 110 200 44 24 -31  -5 normal //roof B, platform B             0459
-   54 sprites/roofs.png        8bpp 160 200 44 24 -11  -5 normal
+   51 sprites/roofs.png        8bpp  10 200 44 24 -31  -6 normal //roof B, platform A             0457
+   52 sprites/roofs.png        8bpp  60 200 44 24 -11  -6 normal
+   53 sprites/roofs.png        8bpp 110 200 44 24 -31  -6 normal //roof B, platform B             0459
+   54 sprites/roofs.png        8bpp 160 200 44 24 -11  -6 normal
 
    55 sprites/roofs.png        8bpp  10  60 33 25 -31  -9 normal //poles for roof A, platform A   045B
    56 sprites/roofs.png        8bpp  60  60 33 25   0  -9 normal
