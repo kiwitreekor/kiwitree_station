@@ -4,314 +4,295 @@
 // Escapes: 71 70 7= 7! 7< 7> 7G 7g 7gG 7GG 7gg 7c 7C
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
-    0 * 4	 F7 03 00 00
-    1 * 160	 14 "C" "INFO"
-				"T" "NAME" 3A C3 9E
-						ED 82 A4 EC 9C 84 ED 8A B8 EB A6 AC 20 ED 95 9C EA B5 AD EC 97 AD 20 EC 84 B8 ED 8A B8 " v0.4.3.1" 00
-				"T" "DESC" 3A C3 9E
-						98 "copyright 2017 " 94 "Kiwitree"
-						89 0D EB B2 84 EA B7 B8 20 EC A0 9C EB B3 B4 ":" 95 0D
-						"kiwitreekor@gmail.com"
-						98 0D EB 9D BC EC 9D B4 EC 84 A0 EC 8A A4 ": " 94 
-						"CC-BY-NC-SA 3.0" 00 00 00
-    2 * 38	 14 "C" "INFO" 
-					"B" "PALS" \w1 "W"
-					"B" "VRSN" \w4 \d603
-					"B" "MINV" \w4 \d1
+    0 * 4	 F3 03 00 00
+    1 * 1179	 14 "C" "INFO"
+						"T" "NAME" 3A C3 9E
+								"키위트리 한국역 세트 v0.4.4" 00
+						"T" "DESC" 3A C3 9E
+								98 "copyright 2017 " 94 "Kiwitree" 0D
+								89 "버그 제보:" 0D
+								95 "kiwitreekor@gmail.com" 0D
+								98 "라이선스: " 94 "CC-BY-NC-SA 3.0" 00 
+						"B" "PALS" \w1 "W"
+						"B" "VRSN" \w4 \d604
+						"B" "MINV" \w4 \d1
+						"B" "NPAR" \w1 03
+						"C" "PARA" 
+							"C" \d0
+								"T" "NAME" 7F 
+									"Show path dark if path is reserved" 00
+								"T" "DESC" 7F 
+									"This setting only affects to the junction stations. \0D"
+									"It would be look little weirdly." 00
+								"T" "NAME" 3A C3 9E
+									"열차가 지나갈 경로를 어둡게 보여주기" 00
+								"T" "DESC" 3A C3 9E
+									"이 설정은 분기기가 설치된 승강장에만 적용됩니다.\0D"									"다소 부자연스럽게 작동할 수 있습니다." 00
+								"B" "TYPE" \w1 01
+								"B" "DFLT" \w4 \d1
+							00 
+							"C" \d1
+								"T" "NAME" 7F "Play sound effects when screendoor closes or opens" 00
+								"T" "DESC" 7F "If you set this setting on, it will make sound when"
+										" screendoor closes or opens." 00
+								"T" "NAME" 3A C3 9E
+									"스크린도어가 열리고 닫힐 때 효과음 재생" 00
+								"T" "DESC" 3A C3 9E
+									"이 매개 변수를 '예'로 설정하면 스크린도어가 열리고 닫힐 때 효과음이 나게 됩니다." 00
+								"B" "TYPE" \w1 01
+								"B" "DFLT" \w4 \d1
+							00
+							"C" \d2
+								"T" "NAME" 7F "Show passenger graphics by waiting amount" 00
+								"T" "DESC" 7F "If you set this setting on, it will show passenger graphics"
+										" by waiting amount." 00
+								"T" "NAME" 3A C3 9E
+										"승객 그래픽 보이기" 00
+								"T" "DESC" 3A C3 9E
+										"역에 대기하고 있는 승객을 그래픽으로 보여줍니다." 00
+								"B" "TYPE" \w1 01
+								"B" "DFLT" \w4 \d1
+							00
+						00
 					00
-				00
-    3 * 16	 14 "C" "INFO" 
-					"B" "NPAR" \w1 03 00
-				00
-    4 * 365	 14 "C" "INFO" "C" "PARA" "C" \d0
-				"T" "NAME" 7F "Show path dark if path is reserved" 00
-				"T" "DESC" 7F "This setting only affects to the junction stations. \0D"
-						"It would be look little weirdly." 00
-				"T" "NAME" 3A C3 9E
-						EC 97 B4 EC B0 A8 EA B0 80 20 EC A7 80 EB 82 98 EA B0 88 20
-						EA B2 BD EB A1 9C EB A5 BC 20 EC 96 B4 EB 91 A1 EA B2 8C 20
-						EB B3 B4 EC 97 AC EC A3 BC EA B8 B0 00
-				"T" "DESC" 3A C3 9E
-						EC 9D B4 20 EC 84 A4 EC A0 95 EC 9D 80 20 EB B6 84 EA B8 B0
-						EA B8 B0 EA B0 80 20 EC 84 A4 EC B9 98 EB 90 9C 20 EC 8A B9
-						EA B0 95 EC 9E A5 EC 97 90 EB A7 8C 20 EC A0 81 EC 9A A9 EB
-						90 A9 EB 8B 88 EB 8B A4 2E 0D
-						EB 8B A4 EC 86 8C 20 EB B6 80 EC 9E 90 EC 97 B0 EC 8A A4 EB
-						9F BD EA B2 8C 20 EC 9E 91 EB 8F 99 ED 95 A0 20 EC 88 98 20
-						EC 9E 88 EC 8A B5 EB 8B 88 EB 8B A4 2E 00
-				"B" "TYPE" 01 00 01
-				"B" "DFLT" 04 00 \d1
-				00 00 00 00
-    5 * 369	 14 "C" "INFO" "C" "PARA" "C" \d1
-				"T" "NAME" 7F "Play sound effects when screendoor closes or opens" 00
-				"T" "DESC" 7F "If you set this setting on, it will make sound when"
-						" screendoor closes or opens." 00
-				"T" "NAME" 3A C3 9E
-						EC 8A A4 ED 81 AC EB A6 B0 EB 8F 84 EC 96 B4 EA B0 80 20 EC
-						97 B4 EB A6 AC EA B3 A0 20 EB 8B AB ED 9E 90 20 EB 95 8C 20
-						ED 9A A8 EA B3 BC EC 9D 8C 20 EC 9E AC EC 83 9D 00
-				"T" "DESC" 3A C3 9E
-						EC 9D B4 20 EB A7 A4 EA B0 9C 20 EB B3 80 EC 88 98 EB A5 BC
-						20 27 EC 98 88 27 EB A1 9C 20 EC 84 A4 EC A0 95 ED 95 98 EB
-						A9 B4 20 EC 8A A4 ED 81 AC EB A6 B0 EB 8F 84 EC 96 B4 EA B0
-						80 20 EC 97 B4 EB A6 AC EA B3 A0 20 EB 8B AB ED 9E 90 20 EB
-						95 8C 20 ED 9A A8 EA B3 BC EC 9D 8C EC 9D B4 20 EB 82 98 EA
-						B2 8C 20 EB 90 A9 EB 8B 88 EB 8B A4 2E 00
-				"B" "TYPE" 01 00 01
-				"B" "DFLT" 04 00 \d1
-				00 00 00 00
-    6 * 285	 14 "C" "INFO" "C" "PARA" "C" \d2
-				"T" "NAME" 7F "Show passenger graphics by waiting amount" 00
-				"T" "DESC" 7F "If you set this setting on, it will show passenger graphics"
-						" by waiting amount." 00
-				"T" "NAME" 3A C3 9E
-						EC 8A B9 EA B0 9D 20 EA B7 B8 EB 9E 98 ED 94 BD 20 EB B3 
-						B4 EC 9D B4 EA B8 B0 00
-				"T" "DESC" 3A C3 9E
-						EC 97 AD EC 97 90 20 EB 8C 80 EA B8 B0 ED 95 98 EA B3 A0
-						20 EC 9E 88 EB 8A 94 20 EC 8A B9 EA B0 9D EC 9D 84 20 EA
-						B7 B8 EB 9E 98 ED 94 BD EC 9C BC EB A1 9C 20 EB B3 B4 EC
-						97 AC EC A4 8D EB 8B 88 EB 8B A4 2E 00
-				"B" "TYPE" 01 00 01
-				"B" "DFLT" 04 00 \d1
-				00 00 00 00
-    7 * 125	 08 08 "KW" 00 01 "Kiwitree Station Set v0.4.3.1" 00
+					00
+    2 * 123	 08 08 "KW" 00 01 "Kiwitree Station Set v0.4.4" 00
 						98 "copyright 2017 " 94 "Kiwitree"
 						89 0D "Bug Report:" 95 0D "kiwitreekor@gmail.com"
 						98 0D "License: " 94 "CC-BY-NC-SA 3.0" 00
 
 // Default Spriteset
-    8 * 4	 01 04 01 9D
+    3 * 4	 01 04 01 9D
 
 //ID 0x0000042D
-    9 kws\sprites\sprites.png       8bpp   4  13 44 24 -31  -3 normal
-   10 kws\sprites\sprites.png       8bpp  50  13 44 24 -11  -3 normal
-   11 kws\sprites\sprites.png       8bpp 188  13 44 22 -31  -1 normal
+    4 sprites\sprites.png       8bpp   4  13 44 24 -31  -3 normal
+    5 sprites\sprites.png       8bpp  50  13 44 24 -11  -3 normal
+    6 sprites\sprites.png       8bpp 188  13 44 22 -31  -1 normal
 
 //ID 0x00000430
-   12 kws\sprites\sprites.png       8bpp 234  13 44 22 -11  -1 normal
-   13 kws\sprites\sprites.png       8bpp 188  37 44 22 -31  -1 normal
-   14 kws\sprites\sprites.png       8bpp 234  37 44 22 -11  -1 normal
-   15 kws\sprites\sprites.png       8bpp   4  39 44 24 -31   5 normal
-   16 kws\sprites\sprites.png       8bpp  50  39 44 24 -11   5 normal
-   17 kws\sprites\sprites.png       8bpp  89 216 44 31 -31   1 normal
-   18 kws\sprites\sprites.png       8bpp 135 216 44 31 -11   1 normal
-   19 kws\sprites\sprites.png       8bpp   4 175 29 24 -27  -8 normal
-   20 kws\sprites\sprites.png       8bpp  35 175 29 24   0  -8 normal
-   21 kws\sprites\sprites.png       8bpp  82 159 44 22 -31  -1 normal
-   22 kws\sprites\sprites.png       8bpp 128 159 44 22 -11  -1 normal
-   23 kws\sprites\sprites.png       8bpp 188 111 44 22 -31  -1 normal
-   24 kws\sprites\sprites.png       8bpp 234 111 44 22 -11  -1 normal
-   25 kws\sprites\sprites.png       8bpp 326 135 44 21 -31   0 normal
-   26 kws\sprites\sprites.png       8bpp 280 135 44 21 -11   0 normal
-   27 kws\sprites\sprites.png       8bpp 280 161 24 12  -5   0 normal
+    7 sprites\sprites.png       8bpp 234  13 44 22 -11  -1 normal
+    8 sprites\sprites.png       8bpp 188  37 44 22 -31  -1 normal
+    9 sprites\sprites.png       8bpp 234  37 44 22 -11  -1 normal
+   10 sprites\sprites.png       8bpp   4  39 44 24 -31   5 normal
+   11 sprites\sprites.png       8bpp  50  39 44 24 -11   5 normal
+   12 sprites\sprites.png       8bpp  89 216 44 31 -31   1 normal
+   13 sprites\sprites.png       8bpp 135 216 44 31 -11   1 normal
+   14 sprites\sprites.png       8bpp   4 175 29 24 -27  -8 normal
+   15 sprites\sprites.png       8bpp  35 175 29 24   0  -8 normal
+   16 sprites\sprites.png       8bpp  82 159 44 22 -31  -1 normal
+   17 sprites\sprites.png       8bpp 128 159 44 22 -11  -1 normal
+   18 sprites\sprites.png       8bpp 188 111 44 22 -31  -1 normal
+   19 sprites\sprites.png       8bpp 234 111 44 22 -11  -1 normal
+   20 sprites\sprites.png       8bpp 326 135 44 21 -31   0 normal
+   21 sprites\sprites.png       8bpp 280 135 44 21 -11   0 normal
+   22 sprites\sprites.png       8bpp 280 161 24 12  -5   0 normal
 
 //ID 0x00000440
-   28 kws\sprites\sprites.png       8bpp 306 161 24 12 -16   0 normal
-   29 kws\sprites\sprites.png       8bpp 332 161 24 12  -3  -1 normal
-   30 kws\sprites\sprites.png       8bpp 358 161 24 12 -19  -1 normal
-   31 kws\sprites\sprites.png       8bpp 410 175 24 12  -3   0 normal
-   32 kws\sprites\sprites.png       8bpp 384 175 24 12 -19   1 normal
-   33 kws\sprites\sprites.png       8bpp   4 149 37 24  -4  -7 normal
-   34 kws\sprites\sprites.png       8bpp  43 149 37 24 -32  -7 normal
-   35 kws\sprites\sprites.png       8bpp 280 238 29 26 -27 -10 normal
-   36 kws\sprites\sprites.png       8bpp 311 238 29 26   0 -10 normal
-   37 kws\sprites\sprites.png       8bpp  96  13 44 24 -31  -3 normal
-   38 kws\sprites\sprites.png       8bpp 142  13 44 24 -11  -3 normal
-   39 kws\sprites\sprites.png       8bpp 280  13 44 22 -31  -1 normal
-   40 kws\sprites\sprites.png       8bpp 326  13 44 22 -11  -1 normal
-   41 kws\sprites\sprites.png       8bpp 280  37 44 22 -31  -1 normal
-   42 kws\sprites\sprites.png       8bpp 326  37 44 22 -11  -1 normal
-   43 kws\sprites\sprites.png       8bpp  96  39 44 32 -31   2 normal
+   23 sprites\sprites.png       8bpp 306 161 24 12 -16   0 normal
+   24 sprites\sprites.png       8bpp 332 161 24 12  -3  -1 normal
+   25 sprites\sprites.png       8bpp 358 161 24 12 -19  -1 normal
+   26 sprites\sprites.png       8bpp 410 175 24 12  -3   0 normal
+   27 sprites\sprites.png       8bpp 384 175 24 12 -19   1 normal
+   28 sprites\sprites.png       8bpp   4 149 37 24  -4  -7 normal
+   29 sprites\sprites.png       8bpp  43 149 37 24 -32  -7 normal
+   30 sprites\sprites.png       8bpp 280 238 29 26 -27 -10 normal
+   31 sprites\sprites.png       8bpp 311 238 29 26   0 -10 normal
+   32 sprites\sprites.png       8bpp  96  13 44 24 -31  -3 normal
+   33 sprites\sprites.png       8bpp 142  13 44 24 -11  -3 normal
+   34 sprites\sprites.png       8bpp 280  13 44 22 -31  -1 normal
+   35 sprites\sprites.png       8bpp 326  13 44 22 -11  -1 normal
+   36 sprites\sprites.png       8bpp 280  37 44 22 -31  -1 normal
+   37 sprites\sprites.png       8bpp 326  37 44 22 -11  -1 normal
+   38 sprites\sprites.png       8bpp  96  39 44 32 -31   2 normal
 
 //ID 0x00000450
-   44 kws\sprites\sprites.png       8bpp 142  39 44 32 -11   2 normal
-   45 kws\sprites\sprites.png       8bpp 280 295 44 31 -31   1 normal
-   46 kws\sprites\sprites.png       8bpp 326 295 44 31 -11   1 normal
-   47 kws\sprites\sprites.png       8bpp   4 201 28 23 -20  -4 normal
-   48 kws\sprites\sprites.png       8bpp  35 201 28 23  -6  -4 normal
-   49 kws\sprites\sprites.png       8bpp 128 183 44 22 -31  -1 normal
-   50 kws\sprites\sprites.png       8bpp  82 183 44 22 -11  -1 normal
-   51 kws\sprites\sprites.png       8bpp 280 111 44 22 -31  -1 normal
-   52 kws\sprites\sprites.png       8bpp 326 111 44 22 -11  -1 normal
-   53 kws\sprites\sprites.png       8bpp 234 135 44 21 -31   0 normal
-   54 kws\sprites\sprites.png       8bpp 188 135 44 21 -11   0 normal
-   55 kws\sprites\sprites.png       8bpp 306 175 24 12  -5   0 normal
-   56 kws\sprites\sprites.png       8bpp 280 175 24 12 -16   0 normal
-   57 kws\sprites\sprites.png       8bpp 358 175 24 12  -3  -1 normal
-   58 kws\sprites\sprites.png       8bpp 332 175 24 12 -19  -1 normal
-   59 kws\sprites\sprites.png       8bpp 384 161 24 12  -3   0 normal
+   39 sprites\sprites.png       8bpp 142  39 44 32 -11   2 normal
+   40 sprites\sprites.png       8bpp 280 295 44 31 -31   1 normal
+   41 sprites\sprites.png       8bpp 326 295 44 31 -11   1 normal
+   42 sprites\sprites.png       8bpp   4 201 28 23 -20  -4 normal
+   43 sprites\sprites.png       8bpp  35 201 28 23  -6  -4 normal
+   44 sprites\sprites.png       8bpp 128 183 44 22 -31  -1 normal
+   45 sprites\sprites.png       8bpp  82 183 44 22 -11  -1 normal
+   46 sprites\sprites.png       8bpp 280 111 44 22 -31  -1 normal
+   47 sprites\sprites.png       8bpp 326 111 44 22 -11  -1 normal
+   48 sprites\sprites.png       8bpp 234 135 44 21 -31   0 normal
+   49 sprites\sprites.png       8bpp 188 135 44 21 -11   0 normal
+   50 sprites\sprites.png       8bpp 306 175 24 12  -5   0 normal
+   51 sprites\sprites.png       8bpp 280 175 24 12 -16   0 normal
+   52 sprites\sprites.png       8bpp 358 175 24 12  -3  -1 normal
+   53 sprites\sprites.png       8bpp 332 175 24 12 -19  -1 normal
+   54 sprites\sprites.png       8bpp 384 161 24 12  -3   0 normal
 
 //ID 0x00000460
-   60 kws\sprites\sprites.png       8bpp 410 161 24 12 -17   0 normal
-   61 kws\sprites\sprites.png       8bpp   4 283 37 24 -10 -10 normal
-   62 kws\sprites\sprites.png       8bpp  43 283 37 24 -26 -10 normal
-   63 kws\sprites\sprites.png       8bpp 280 266 28 25 -20  -6 normal
-   64 kws\sprites\sprites.png       8bpp 311 266 28 25  -6  -6 normal
-   65 kws\sprites\sprites.png       8bpp  89 249 44 24 -31  -8 normal
-   66 kws\sprites\sprites.png       8bpp 135 249 44 24 -11  -8 normal
-   67 kws\sprites\sprites.png       8bpp 181 249 44 32 -31 -11 normal
-   68 kws\sprites\sprites.png       8bpp 227 249 44 32 -11 -11 normal
-   69 kws\sprites\sprites.png       8bpp  89 283 44 31 -31 -12 normal
-   70 kws\sprites\sprites.png       8bpp 135 283 44 31 -11 -12 normal
-   71 kws\sprites\sprites.png       8bpp 181 283 44 31 -31 -12 normal
-   72 kws\sprites\sprites.png       8bpp 227 283 44 31 -11 -12 normal
-   73 kws\sprites\sprites.png       8bpp  89 316 44 24 -31  -8 normal
-   74 kws\sprites\sprites.png       8bpp 135 316 44 24 -11  -8 normal
-   75 kws\sprites\sprites.png       8bpp 181 316 44 32 -31 -11 normal
+   55 sprites\sprites.png       8bpp 410 161 24 12 -17   0 normal
+   56 sprites\sprites.png       8bpp   4 283 37 24 -10 -10 normal
+   57 sprites\sprites.png       8bpp  43 283 37 24 -26 -10 normal
+   58 sprites\sprites.png       8bpp 280 266 28 25 -20  -6 normal
+   59 sprites\sprites.png       8bpp 311 266 28 25  -6  -6 normal
+   60 sprites\sprites.png       8bpp  89 249 44 24 -31  -8 normal
+   61 sprites\sprites.png       8bpp 135 249 44 24 -11  -8 normal
+   62 sprites\sprites.png       8bpp 181 249 44 32 -31 -11 normal
+   63 sprites\sprites.png       8bpp 227 249 44 32 -11 -11 normal
+   64 sprites\sprites.png       8bpp  89 283 44 31 -31 -12 normal
+   65 sprites\sprites.png       8bpp 135 283 44 31 -11 -12 normal
+   66 sprites\sprites.png       8bpp 181 283 44 31 -31 -12 normal
+   67 sprites\sprites.png       8bpp 227 283 44 31 -11 -12 normal
+   68 sprites\sprites.png       8bpp  89 316 44 24 -31  -8 normal
+   69 sprites\sprites.png       8bpp 135 316 44 24 -11  -8 normal
+   70 sprites\sprites.png       8bpp 181 316 44 32 -31 -11 normal
 
 //ID 0x00000470
-   76 kws\sprites\sprites.png       8bpp 227 316 44 32 -11 -11 normal
-   77 kws\sprites\sprites.png       8bpp  89 350 44 31 -31 -12 normal
-   78 kws\sprites\sprites.png       8bpp 135 350 44 31 -11 -12 normal
-   79 kws\sprites\sprites.png       8bpp 181 350 44 31 -31 -12 normal
-   80 kws\sprites\sprites.png       8bpp 227 350 44 31 -11 -12 normal
-   81 kws\sprites\sprites.png       8bpp 194 181 11 10  -9  -4 normal
-   82 kws\sprites\sprites.png       8bpp 207 181 11 10  -2  -5 normal
-   83 kws\sprites\sprites.png       8bpp 194 193  6  8  -2  -5 normal
-   84 kws\sprites\sprites.png       8bpp 202 193  6  8  -4  -5 normal
-   85 kws\sprites\sprites.png       8bpp 210 193  5  9  -4  -5 normal
-   86 kws\sprites\sprites.png       8bpp 217 193  5  9  -1  -6 normal
-   87 kws\sprites\sprites.png       8bpp 194 203  8  7  -1  -3 normal
-   88 kws\sprites\sprites.png       8bpp 204 203  8  7  -5  -3 normal
-   89 kws\sprites\sprites.png       8bpp 224 181 18 14 -11  -6 normal
-   90 kws\sprites\sprites.png       8bpp 243 181 18 14  -5  -6 normal
-   91 kws\sprites\sprites.png       8bpp 224 196 18 14 -11  -6 normal
+   71 sprites\sprites.png       8bpp 227 316 44 32 -11 -11 normal
+   72 sprites\sprites.png       8bpp  89 350 44 31 -31 -12 normal
+   73 sprites\sprites.png       8bpp 135 350 44 31 -11 -12 normal
+   74 sprites\sprites.png       8bpp 181 350 44 31 -31 -12 normal
+   75 sprites\sprites.png       8bpp 227 350 44 31 -11 -12 normal
+   76 sprites\sprites.png       8bpp 194 181 11 10  -9  -4 normal
+   77 sprites\sprites.png       8bpp 207 181 11 10  -2  -5 normal
+   78 sprites\sprites.png       8bpp 194 193  6  8  -2  -5 normal
+   79 sprites\sprites.png       8bpp 202 193  6  8  -4  -5 normal
+   80 sprites\sprites.png       8bpp 210 193  5  9  -4  -5 normal
+   81 sprites\sprites.png       8bpp 217 193  5  9  -1  -6 normal
+   82 sprites\sprites.png       8bpp 194 203  8  7  -1  -3 normal
+   83 sprites\sprites.png       8bpp 204 203  8  7  -5  -3 normal
+   84 sprites\sprites.png       8bpp 224 181 18 14 -11  -6 normal
+   85 sprites\sprites.png       8bpp 243 181 18 14  -5  -6 normal
+   86 sprites\sprites.png       8bpp 224 196 18 14 -11  -6 normal
 
 //ID 0x00000480
-   92 kws\sprites\sprites.png       8bpp 243 196 18 14  -5  -6 normal
-   93 kws\sprites\sprites.png       8bpp 186 211 18 14 -11  -6 normal
-   94 kws\sprites\sprites.png       8bpp 205 211 18 14  -5  -6 normal
-   95 kws\sprites\sprites.png       8bpp 186 226 18 14 -11  -6 normal
-   96 kws\sprites\sprites.png       8bpp 205 226 18 14  -5  -6 normal
-   97 kws\sprites\sprites.png       8bpp 224 211 18 14 -11  -6 normal
-   98 kws\sprites\sprites.png       8bpp 243 211 18 14  -5  -6 normal
-   99 kws\sprites\sprites.png       8bpp 224 226 18 14 -11  -6 normal
-  100 kws\sprites\sprites.png       8bpp 243 226 18 14  -5  -6 normal
-  101 kws\sprites\sprites.png       8bpp   7 500 32 23 -27  -6 normal
-  102 kws\sprites\sprites.png       8bpp   7 525 32 23  -3  -6 normal
-  103 kws\sprites\sprites.png       8bpp   7 450 32 23 -29  -6 normal
-  104 kws\sprites\sprites.png       8bpp   7 475 32 23  -1  -6 normal
-  105 kws\sprites\sprites.png       8bpp   7 402 32 21 -29  -5 normal
-  106 kws\sprites\sprites.png       8bpp   7 427 32 21  -1  -5 normal
-  107 kws\sprites\sprites.png       8bpp  41 402 32 21 -29  -5 normal
+   87 sprites\sprites.png       8bpp 243 196 18 14  -5  -6 normal
+   88 sprites\sprites.png       8bpp 186 211 18 14 -11  -6 normal
+   89 sprites\sprites.png       8bpp 205 211 18 14  -5  -6 normal
+   90 sprites\sprites.png       8bpp 186 226 18 14 -11  -6 normal
+   91 sprites\sprites.png       8bpp 205 226 18 14  -5  -6 normal
+   92 sprites\sprites.png       8bpp 224 211 18 14 -11  -6 normal
+   93 sprites\sprites.png       8bpp 243 211 18 14  -5  -6 normal
+   94 sprites\sprites.png       8bpp 224 226 18 14 -11  -6 normal
+   95 sprites\sprites.png       8bpp 243 226 18 14  -5  -6 normal
+   96 sprites\sprites.png       8bpp   7 500 32 23 -27  -6 normal
+   97 sprites\sprites.png       8bpp   7 525 32 23  -3  -6 normal
+   98 sprites\sprites.png       8bpp   7 450 32 23 -29  -6 normal
+   99 sprites\sprites.png       8bpp   7 475 32 23  -1  -6 normal
+  100 sprites\sprites.png       8bpp   7 402 32 21 -29  -5 normal
+  101 sprites\sprites.png       8bpp   7 427 32 21  -1  -5 normal
+  102 sprites\sprites.png       8bpp  41 402 32 21 -29  -5 normal
 
 //ID 0x00000490
-  108 kws\sprites\sprites.png       8bpp  41 427 32 21  -1  -5 normal
-  109 kws\sprites\sprites.png       8bpp  75 402 32 21 -29  -5 normal
-  110 kws\sprites\sprites.png       8bpp  75 427 32 21  -1  -5 normal
-  111 kws\sprites\sprites.png       8bpp   7 402 32 21 -31  -5 normal
-  112 kws\sprites\sprites.png       8bpp   7 427 32 21   1  -5 normal
-  113 kws\sprites\sprites.png       8bpp  41 402 32 21 -31  -5 normal
-  114 kws\sprites\sprites.png       8bpp  41 427 32 21   1  -5 normal
-  115 kws\sprites\sprites.png       8bpp  75 402 32 21 -31  -5 normal
-  116 kws\sprites\sprites.png       8bpp  75 427 32 21   1  -5 normal
-  117 kws\sprites\sprites.png       8bpp   4  65 44 19 -31  -3 normal
-  118 kws\sprites\sprites.png       8bpp  50  65 44 19 -11  -3 normal
-  119 kws\sprites\sprites.png       8bpp   4  86 44 19 -31  -3 normal
-  120 kws\sprites\sprites.png       8bpp  50  86 44 19 -11  -3 normal
-  121 kws\sprites\sprites.png       8bpp   4 107 44 19 -31  -3 normal
-  122 kws\sprites\sprites.png       8bpp  50 107 44 19 -11  -3 normal
-  123 kws\sprites\sprites.png       8bpp   4 128 44 19 -31  -3 normal
+  103 sprites\sprites.png       8bpp  41 427 32 21  -1  -5 normal
+  104 sprites\sprites.png       8bpp  75 402 32 21 -29  -5 normal
+  105 sprites\sprites.png       8bpp  75 427 32 21  -1  -5 normal
+  106 sprites\sprites.png       8bpp   7 402 32 21 -31  -5 normal
+  107 sprites\sprites.png       8bpp   7 427 32 21   1  -5 normal
+  108 sprites\sprites.png       8bpp  41 402 32 21 -31  -5 normal
+  109 sprites\sprites.png       8bpp  41 427 32 21   1  -5 normal
+  110 sprites\sprites.png       8bpp  75 402 32 21 -31  -5 normal
+  111 sprites\sprites.png       8bpp  75 427 32 21   1  -5 normal
+  112 sprites\sprites.png       8bpp   4  65 44 19 -31  -3 normal
+  113 sprites\sprites.png       8bpp  50  65 44 19 -11  -3 normal
+  114 sprites\sprites.png       8bpp   4  86 44 19 -31  -3 normal
+  115 sprites\sprites.png       8bpp  50  86 44 19 -11  -3 normal
+  116 sprites\sprites.png       8bpp   4 107 44 19 -31  -3 normal
+  117 sprites\sprites.png       8bpp  50 107 44 19 -11  -3 normal
+  118 sprites\sprites.png       8bpp   4 128 44 19 -31  -3 normal
 
 //ID 0x000004A0
-  124 kws\sprites\sprites.png       8bpp  50 128 44 19 -11  -3 normal
-  125 kws\sprites\sprites.png       8bpp  96  73 44 19 -31  -3 normal
-  126 kws\sprites\sprites.png       8bpp 142  73 44 19 -11  -3 normal
-  127 kws\sprites\sprites.png       8bpp  96  94 44 19 -31  -3 normal
-  128 kws\sprites\sprites.png       8bpp 142  94 44 19 -11  -3 normal
-  129 kws\sprites\sprites.png       8bpp  96 115 44 19 -31  -3 normal
-  130 kws\sprites\sprites.png       8bpp 142 115 44 19 -11  -3 normal
-  131 kws\sprites\sprites.png       8bpp  96 136 44 19 -31  -3 normal
-  132 kws\sprites\sprites.png       8bpp 142 136 44 19 -11  -3 normal
-  133 kws\sprites\sprites.png       8bpp 507  13 36 18  -5   0 normal
-  134 kws\sprites\sprites.png       8bpp 507  33 36 18 -28   0 normal
-  135 kws\sprites\sprites.png       8bpp 545  13 36 18  -3   0 normal
-  136 kws\sprites\sprites.png       8bpp 545  33 36 18 -29   0 normal
-  137 kws\sprites\sprites.png       8bpp 545  13 36 18  -2  -1 normal
-  138 kws\sprites\sprites.png       8bpp 545  33 36 18 -31  -1 normal
-  139 kws\sprites\buildings.png     8bpp  10  10 64 47 -31 -16 normal
+  119 sprites\sprites.png       8bpp  50 128 44 19 -11  -3 normal
+  120 sprites\sprites.png       8bpp  96  73 44 19 -31  -3 normal
+  121 sprites\sprites.png       8bpp 142  73 44 19 -11  -3 normal
+  122 sprites\sprites.png       8bpp  96  94 44 19 -31  -3 normal
+  123 sprites\sprites.png       8bpp 142  94 44 19 -11  -3 normal
+  124 sprites\sprites.png       8bpp  96 115 44 19 -31  -3 normal
+  125 sprites\sprites.png       8bpp 142 115 44 19 -11  -3 normal
+  126 sprites\sprites.png       8bpp  96 136 44 19 -31  -3 normal
+  127 sprites\sprites.png       8bpp 142 136 44 19 -11  -3 normal
+  128 sprites\sprites.png       8bpp 507  13 36 18  -5   0 normal
+  129 sprites\sprites.png       8bpp 507  33 36 18 -28   0 normal
+  130 sprites\sprites.png       8bpp 545  13 36 18  -3   0 normal
+  131 sprites\sprites.png       8bpp 545  33 36 18 -29   0 normal
+  132 sprites\sprites.png       8bpp 545  13 36 18  -2  -1 normal
+  133 sprites\sprites.png       8bpp 545  33 36 18 -31  -1 normal
+  134 sprites\buildings.png     8bpp  10  10 64 47 -31 -16 normal
 
 //ID 0x000004B0
-  140 kws\sprites\buildings.png     8bpp  90  10 64 47 -31 -16 normal
-  141 kws\sprites\buildings.png     8bpp  10  70 64 79 -31 -48 normal
-  142 kws\sprites\buildings.png     8bpp  90  70 64 79 -31 -48 normal
-  143 kws\sprites\buildings.png     8bpp 170  10 64 59 -31 -28 normal
-  144 kws\sprites\buildings.png     8bpp 250  10 64 59 -31 -28 normal
-  145 kws\sprites\buildings.png     8bpp 170  80 64 91 -31 -60 normal
-  146 kws\sprites\buildings.png     8bpp 250  80 64 91 -31 -60 normal
-  147 kws\sprites\buildings.png     8bpp  10 160 32 24 -31  -9 normal
-  148 kws\sprites\buildings.png     8bpp  90 160 32 24   1  -9 normal
-  149 kws\sprites\buildings.png     8bpp  50 160 32 27 -31 -12 normal
-  150 kws\sprites\buildings.png     8bpp 130 160 32 27   1 -12 normal
-  151 kws\sprites\buildings.png     8bpp  10 200 32 26 -31 -11 normal
-  152 kws\sprites\buildings.png     8bpp  90 200 32 26   1 -11 normal
-  153 kws\sprites\buildings.png     8bpp 170  10 64 59 -31 -28 normal
-  154 kws\sprites\buildings.png     8bpp 250  10 64 59 -31 -28 normal
-  155 kws\sprites\buildings.png     8bpp 330  10 64 59 -31 -28 normal
+  135 sprites\buildings.png     8bpp  90  10 64 47 -31 -16 normal
+  136 sprites\buildings.png     8bpp  10  70 64 79 -31 -48 normal
+  137 sprites\buildings.png     8bpp  90  70 64 79 -31 -48 normal
+  138 sprites\buildings.png     8bpp 170  10 64 59 -31 -28 normal
+  139 sprites\buildings.png     8bpp 250  10 64 59 -31 -28 normal
+  140 sprites\buildings.png     8bpp 170  80 64 91 -31 -60 normal
+  141 sprites\buildings.png     8bpp 250  80 64 91 -31 -60 normal
+  142 sprites\buildings.png     8bpp  10 160 32 24 -31  -9 normal
+  143 sprites\buildings.png     8bpp  90 160 32 24   1  -9 normal
+  144 sprites\buildings.png     8bpp  50 160 32 27 -31 -12 normal
+  145 sprites\buildings.png     8bpp 130 160 32 27   1 -12 normal
+  146 sprites\buildings.png     8bpp  10 200 32 26 -31 -11 normal
+  147 sprites\buildings.png     8bpp  90 200 32 26   1 -11 normal
+  148 sprites\buildings.png     8bpp 170  10 64 59 -31 -28 normal
+  149 sprites\buildings.png     8bpp 250  10 64 59 -31 -28 normal
+  150 sprites\buildings.png     8bpp 330  10 64 59 -31 -28 normal
 
 //ID 0x000004C0
-  156 kws\sprites\buildings.png     8bpp 410  10 64 59 -31 -28 normal
-  157 kws\sprites\buildings.png     8bpp 490  10 64 59 -31 -28 normal
-  158 kws\sprites\buildings.png     8bpp 570  10 64 59 -31 -28 normal
-  159 kws\sprites\buildings.png     8bpp  10 250 64 31 -31   0 normal
-  160 kws\sprites\buildings.png     8bpp 170  80 64 91 -31 -60 normal
-  161 kws\sprites\buildings.png     8bpp 250  80 64 91 -31 -60 normal
-  162 kws\sprites\buildings.png     8bpp 330  80 64 91 -31 -60 normal
-  163 kws\sprites\buildings.png     8bpp 410  80 64 91 -31 -60 normal
-  164 kws\sprites\buildings.png     8bpp 490  80 64 91 -31 -60 normal
-  165 kws\sprites\buildings.png     8bpp 570  80 64 91 -31 -60 normal
-  166 * 7	 02 04 03 00 01 00 00
+  151 sprites\buildings.png     8bpp 410  10 64 59 -31 -28 normal
+  152 sprites\buildings.png     8bpp 490  10 64 59 -31 -28 normal
+  153 sprites\buildings.png     8bpp 570  10 64 59 -31 -28 normal
+  154 sprites\buildings.png     8bpp  10 250 64 31 -31   0 normal
+  155 sprites\buildings.png     8bpp 170  80 64 91 -31 -60 normal
+  156 sprites\buildings.png     8bpp 250  80 64 91 -31 -60 normal
+  157 sprites\buildings.png     8bpp 330  80 64 91 -31 -60 normal
+  158 sprites\buildings.png     8bpp 410  80 64 91 -31 -60 normal
+  159 sprites\buildings.png     8bpp 490  80 64 91 -31 -60 normal
+  160 sprites\buildings.png     8bpp 570  80 64 91 -31 -60 normal
+  161 * 7	 02 04 03 00 01 00 00
 
 
 //Purchase List View
-  167 * 4	 01 04 01 0C
-  168 kws\sprites\purchase.png      8bpp  10  10 64 42 -31 -11 normal
-  169 kws\sprites\purchase.png      8bpp  80  10 64 42 -31 -11 normal
-  170 kws\sprites\purchase.png      8bpp  10  60 64 42 -31 -11 normal
-  171 kws\sprites\purchase.png      8bpp  80  60 64 42 -31 -11 normal
-  172 kws\sprites\purchase.png      8bpp  10 110 64 42 -31 -11 normal
-  173 kws\sprites\purchase.png      8bpp  80 110 64 42 -31 -11 normal
-  174 kws\sprites\purchase.png      8bpp  10 160 64 42 -31 -11 normal
-  175 kws\sprites\purchase.png      8bpp  80 160 64 42 -31 -11 normal
-  176 kws\sprites\purchase.png      8bpp  10 210 64 42 -31 -11 normal
-  177 kws\sprites\purchase.png      8bpp  80 210 64 42 -31 -11 normal
-  178 kws\sprites\purchase.png      8bpp  10 260 64 42 -31 -11 normal
-  179 kws\sprites\purchase.png      8bpp  80 260 64 42 -31 -11 normal
-  180 * 7	 02 04 02 00 01 00 00
+  162 * 4	 01 04 01 0C
+  163 sprites\purchase.png      8bpp  10  10 64 42 -31 -11 normal
+  164 sprites\purchase.png      8bpp  80  10 64 42 -31 -11 normal
+  165 sprites\purchase.png      8bpp  10  60 64 42 -31 -11 normal
+  166 sprites\purchase.png      8bpp  80  60 64 42 -31 -11 normal
+  167 sprites\purchase.png      8bpp  10 110 64 42 -31 -11 normal
+  168 sprites\purchase.png      8bpp  80 110 64 42 -31 -11 normal
+  169 sprites\purchase.png      8bpp  10 160 64 42 -31 -11 normal
+  170 sprites\purchase.png      8bpp  80 160 64 42 -31 -11 normal
+  171 sprites\purchase.png      8bpp  10 210 64 42 -31 -11 normal
+  172 sprites\purchase.png      8bpp  80 210 64 42 -31 -11 normal
+  173 sprites\purchase.png      8bpp  10 260 64 42 -31 -11 normal
+  174 sprites\purchase.png      8bpp  80 260 64 42 -31 -11 normal
+  175 * 7	 02 04 02 00 01 00 00
 
 //Non-Track Platforms
-  181 * 4	 01 04 01 0A
-  182 kws\sprites\sprites.png       8bpp 372  13 64 34 -31  -3 normal
-  183 kws\sprites\sprites.png       8bpp 438  13 64 34 -31  -3 normal
-  184 kws\sprites\sprites.png       8bpp 372  49 64 32 -31  -1 normal
-  185 kws\sprites\sprites.png       8bpp 438  49 64 32 -31  -1 normal
-  186 kws\sprites\sprites.png       8bpp 372  83 64 32 -31  -1 normal
-  187 kws\sprites\sprites.png       8bpp 438  83 64 32 -31  -1 normal
-  188 kws\sprites\sprites.png       8bpp 438 117 64 39 -31   5 normal
-  189 kws\sprites\sprites.png       8bpp 372 117 64 39 -31   5 normal
-  190 kws\sprites\sprites.png       8bpp 254  61 64 41 -31   0 normal
-  191 kws\sprites\sprites.png       8bpp 188  61 64 41 -31   0 normal
-  192 * 7	 02 04 05 00 01 00 00
+  176 * 4	 01 04 01 0A
+  177 sprites\sprites.png       8bpp 372  13 64 34 -31  -3 normal
+  178 sprites\sprites.png       8bpp 438  13 64 34 -31  -3 normal
+  179 sprites\sprites.png       8bpp 372  49 64 32 -31  -1 normal
+  180 sprites\sprites.png       8bpp 438  49 64 32 -31  -1 normal
+  181 sprites\sprites.png       8bpp 372  83 64 32 -31  -1 normal
+  182 sprites\sprites.png       8bpp 438  83 64 32 -31  -1 normal
+  183 sprites\sprites.png       8bpp 438 117 64 39 -31   5 normal
+  184 sprites\sprites.png       8bpp 372 117 64 39 -31   5 normal
+  185 sprites\sprites.png       8bpp 254  61 64 41 -31   0 normal
+  186 sprites\sprites.png       8bpp 188  61 64 41 -31   0 normal
+  187 * 7	 02 04 05 00 01 00 00
 
 //Error Spriteset
-  193 * 4	 01 04 01 04
-  194 kws\sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
-  195 kws\sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
-  196 kws\sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
-  197 kws\sprites\sprites.png       8bpp  10 560  64 31 -31   0 normal
-  198 * 7	 02 04 7F 00 01 00 00
+  188 * 4	 01 04 01 04
+  189 sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
+  190 sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
+  191 sprites\sprites.png       8bpp  10 560   1  1   0   0 normal
+  192 sprites\sprites.png       8bpp  10 560  64 31 -31   0 normal
+  193 * 7	 02 04 7F 00 01 00 00
 
 //Sounds
-  199 * 3	 11 02 00
-  200 **	 kws\sounds\PSD_open.wav
-  201 **	 kws\sounds\PSD_close.wav
+  194 * 3	 11 02 00
+  195 **	 sounds\PSD_open.wav
+  196 **	 sounds\PSD_close.wav
 
 //Railtype Translation Table 
-  202 * 22	 00 08 01 04 00 12 "RAIL" "ELRL" "MONO" "MGLV"
+  197 * 22	 00 08 01 04 00 12 "RAIL" "ELRL" "MONO" "MGLV"
 
 //Plain Platforms
-  203 * 253	 00 04 04 01 00 08 "KWS0" 0B 02 
+  198 * 253	 00 04 04 01 00 08 "KWS0" 0B 02 
 				0E 01 01 00 01 01 01 00 00
 				09 0A 
    				F4 03 00 00 
@@ -346,42 +327,42 @@
 				F3 03 00 00
 				00 00 00  06 10 03  2E 04 00 00
 				00 00 03  06 10 06  9A 04 00 00 80
-  204 * 6	 07 02 01 02 00 01
-  205 * 46	 02 04 81 85 60 00 20 FF FF \2/ 40 34 0F 00 \2/ 40 10 0F 00 04
+  199 * 6	 07 02 01 02 00 01
+  200 * 46	 02 04 81 85 60 00 20 FF FF \2/ 40 34 0F 00 \2/ 40 10 0F 00 04
 				00 80 00 00 00 00 
 				02 80 01 00 0F 00 
 				04 80 10 00 2F 00 
 				06 80 30 00 6F 00
 				08 80
-  206 * 6	 07 02 01 03 00 01
+  201 * 6	 07 02 01 03 00 01
 //!!Warning (100): Default ID appears earlier in sprite.
-//!!Warning (94): Redefining ID 81 not used since previous definition at sprite 205.
-  207 * 18	 02 04 81 85 60 00 00 FF FF 01
+//!!Warning (94): Redefining ID 81 not used since previous definition at sprite 200.
+  202 * 18	 02 04 81 85 60 00 00 FF FF 01
 				00 80 00 00 00 00 
 				00 80
-  208 * 17	 02 04 80 85 0C 00 FF FF 01 81 00 14 00 14 00 03 00
-  209 * 7	 03 04 01 00 00 80 00
-  210 * 22	 04 04 80 01 00 C4 "[KWS] " "Platforms" 00
-  211 * 24	 04 04 BA 01 00 C4 C3 9E 
+  203 * 17	 02 04 80 85 0C 00 FF FF 01 81 00 14 00 14 00 03 00
+  204 * 7	 03 04 01 00 00 80 00
+  205 * 22	 04 04 80 01 00 C4 "[KWS] " "Platforms" 00
+  206 * 24	 04 04 BA 01 00 C4 C3 9E 
 				"[KWS] " EC 8A B9 EA B0 95 EC 9E A5 00
-  212 * 22	 04 04 80 01 00 C5 "High Platform A" 00
-  213 * 20	 04 04 BA 01 00 C5 C3 9E 
+  207 * 22	 04 04 80 01 00 C5 "High Platform A" 00
+  208 * 20	 04 04 BA 01 00 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A" 00
 
 
 //Define callbacks and custom spritelayouts
-  214 * 110	 00 04 03 11 01 
+  209 * 110	 00 04 03 11 01 
 				08 "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0"
 				 "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0"
 				0B 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02
 				0F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-  215 * 62	 00 04 03 09 20 
+  210 * 62	 00 04 03 09 20 
 				08 "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0" "KWS0"
 				0B 02 02 02 02 02 02 02 02 02
 				0F 00 00 00 00 00 00 00 00 00
 
 
-  216 * 242	 00 04 02 01 01 08 "KWS0" 09 0A 
+  211 * 242	 00 04 02 01 01 08 "KWS0" 09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00 80 
 				F3 03 00 00 
@@ -414,12 +395,12 @@
 				F3 03 00 00 
 				0A 00 00  06 10 03  4A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00 80
-  217 * 7	 03 04 01 01 00 80 00
-  218 * 22	 04 04 80 01 01 C5 "High Platform B" 00
-  219 * 20	 04 04 BA 01 01 C5 C3 9E 
+  212 * 7	 03 04 01 01 00 80 00
+  213 * 22	 04 04 80 01 01 C5 "High Platform B" 00
+  214 * 20	 04 04 BA 01 01 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B" 00
 
-  220 * 422	 00 04 02 01 20 08 "KWS0" 09 0A 
+  215 * 422	 00 04 02 01 20 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 0A 00  10 06 03  49 04 00 00 80 
@@ -470,12 +451,12 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 00  06 10 03  4A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00 80
-  221 * 7	 03 04 01 20 00 80 00
-  222 * 22	 04 04 80 01 20 C5 "High Platform C" 00
-  223 * 20	 04 04 BA 01 20 C5 C3 9E 
+  216 * 7	 03 04 01 20 00 80 00
+  217 * 22	 04 04 80 01 20 C5 "High Platform C" 00
+  218 * 20	 04 04 BA 01 20 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C" 00
 
-  224 * 242	 00 04 02 01 02 08 "KWS0" 09 0A 
+  219 * 242	 00 04 02 01 02 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 80 
 				F3 03 00 00
@@ -508,12 +489,12 @@
 				F3 03 00 00
 				00 00 00  06 10 01  30 04 00 00
 				00 00 01  06 10 06  9A 04 00 00 80
-  225 * 7	 03 04 01 02 00 80 00
-  226 * 21	 04 04 80 01 02 C5 "Low Platform A" 00
-  227 * 20	 04 04 BA 01 02 C5 C3 9E 
+  220 * 7	 03 04 01 02 00 80 00
+  221 * 21	 04 04 80 01 02 C5 "Low Platform A" 00
+  222 * 20	 04 04 BA 01 02 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A" 00
 
-  228 * 242	 00 04 02 01 03 08 "KWS0" 09 0A 
+  223 * 242	 00 04 02 01 03 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00 80 
 				F3 03 00 00 
@@ -546,12 +527,12 @@
 				F3 03 00 00 
 				0A 00 00  06 10 01  4C 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  229 * 7	 03 04 01 03 00 80 00
-  230 * 21	 04 04 80 01 03 C5 "Low Platform B" 00
-  231 * 20	 04 04 BA 01 03 C5 C3 9E 
+  224 * 7	 03 04 01 03 00 80 00
+  225 * 21	 04 04 80 01 03 C5 "Low Platform B" 00
+  226 * 20	 04 04 BA 01 03 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B" 00
 
-  232 * 422	 00 04 02 01 21 08 "KWS0" 09 0A
+  227 * 422	 00 04 02 01 21 08 "KWS0" 09 0A
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 0A 00  10 06 01  4B 04 00 00 80 
@@ -602,12 +583,12 @@
 				00 00 01  06 10 06  9A 04 00 00 
 				0A 00 00  06 10 01  4C 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  233 * 7	 03 04 01 21 00 80 00
-  234 * 21	 04 04 80 01 21 C5 "Low Platform C" 00
-  235 * 20	 04 04 BA 01 21 C5 C3 9E 
+  228 * 7	 03 04 01 21 00 80 00
+  229 * 21	 04 04 80 01 21 C5 "Low Platform C" 00
+  230 * 20	 04 04 BA 01 21 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C" 00
 
-  236 * 242	 00 04 02 01 04 08 "KWS0" 09 0A 
+  231 * 242	 00 04 02 01 04 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00 80 
 				F3 03 00 00
@@ -640,13 +621,13 @@
 				F3 03 00 00
 				00 00 00  06 10 01  32 04 00 00
 				00 00 01  06 10 06  9A 04 00 00 80
-  237 * 7	 03 04 01 04 00 80 00
-  238 * 29	 04 04 80 01 04 C5 "Low Asphalt Platform A" 00
-  239 * 33	 04 04 BA 01 04 C5 C3 9E 
+  232 * 7	 03 04 01 04 00 80 00
+  233 * 29	 04 04 80 01 04 C5 "Low Asphalt Platform A" 00
+  234 * 33	 04 04 BA 01 04 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A" 00
 
-  240 * 242	 00 04 02 01 05 08 "KWS0" 09 0A 
+  235 * 242	 00 04 02 01 05 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00 80 
 				F3 03 00 00 
@@ -679,13 +660,13 @@
 				F3 03 00 00 
 				0A 00 00  06 10 01  4E 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  241 * 7	 03 04 01 05 00 80 00
-  242 * 29	 04 04 80 01 05 C5 "Low Asphalt Platform B" 00
-  243 * 33	 04 04 BA 01 05 C5 C3 9E 
+  236 * 7	 03 04 01 05 00 80 00
+  237 * 29	 04 04 80 01 05 C5 "Low Asphalt Platform B" 00
+  238 * 33	 04 04 BA 01 05 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B" 00
 
-  244 * 422	 00 04 02 01 22 08 "KWS0" 09 0A
+  239 * 422	 00 04 02 01 22 08 "KWS0" 09 0A
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
 				00 0A 00  10 06 01  4D 04 00 00 80 
@@ -736,14 +717,14 @@
 				00 00 01  06 10 06  9A 04 00 00
 				0A 00 00  06 10 01  4E 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  245 * 7	 03 04 01 22 00 80 00
-  246 * 29	 04 04 80 01 22 C5 "Low Asphalt Platform C" 00
-  247 * 33	 04 04 BA 01 22 C5 C3 9E 
+  240 * 7	 03 04 01 22 00 80 00
+  241 * 29	 04 04 80 01 22 C5 "Low Asphalt Platform C" 00
+  242 * 33	 04 04 BA 01 22 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C" 00
 
 //Platforms with Roof
-  248 * 342	 00 04 02 01 06 08 "KWS0" 09 0A 
+  243 * 342	 00 04 02 01 06 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00 
 				00 00 10  10 06 03  33 04 00 00 80 
@@ -786,12 +767,12 @@
 				00 00 00  06 10 03  2E 04 00 00 
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 10  06 10 03  34 04 00 00 80
-  249 * 7	 03 04 01 06 00 80 00
-  250 * 34	 04 04 80 01 06 C5 "High Platform A with Roof A" 00
-  251 * 31	 04 04 BA 01 06 C5 C3 9E 
+  244 * 7	 03 04 01 06 00 80 00
+  245 * 34	 04 04 80 01 06 C5 "High Platform A with Roof A" 00
+  246 * 31	 04 04 BA 01 06 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A" 00
 
-  252 * 342	 00 04 02 01 07 08 "KWS0" 09 0A 
+  247 * 342	 00 04 02 01 07 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 10  10 06 03  4F 04 00 00 80 
@@ -834,12 +815,12 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00 
 				0A 00 10  06 10 03  50 04 00 00 80
-  253 * 7	 03 04 01 07 00 80 00
-  254 * 34	 04 04 80 01 07 C5 "High Platform B with Roof A" 00
-  255 * 31	 04 04 BA 01 07 C5 C3 9E 
+  248 * 7	 03 04 01 07 00 80 00
+  249 * 34	 04 04 80 01 07 C5 "High Platform B with Roof A" 00
+  250 * 31	 04 04 BA 01 07 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A" 00
 
-  256 * 622	 00 04 02 01 23 08 "KWS0" 09 0A 
+  251 * 622	 00 04 02 01 23 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 00 10  10 06 03  33 04 00 00 
@@ -910,12 +891,12 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				0A 00 10  06 10 03  50 04 00 00 80
-  257 * 7	 03 04 01 23 00 80 00
-  258 * 34	 04 04 80 01 23 C5 "High Platform C with Roof A" 00
-  259 * 31	 04 04 BA 01 23 C5 C3 9E 
+  252 * 7	 03 04 01 23 00 80 00
+  253 * 34	 04 04 80 01 23 C5 "High Platform C with Roof A" 00
+  254 * 31	 04 04 BA 01 23 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A" 00
 
-  260 * 342	 00 04 02 01 08 08 "KWS0" 09 0A 
+  255 * 342	 00 04 02 01 08 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 00 0E  10 06 03  33 04 00 00 80 
@@ -958,12 +939,12 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 00 01  06 10 06  9A 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  261 * 7	 03 04 01 08 00 80 00
-  262 * 33	 04 04 80 01 08 C5 "Low Platform A with Roof A" 00
-  263 * 31	 04 04 BA 01 08 C5 C3 9E 
+  256 * 7	 03 04 01 08 00 80 00
+  257 * 33	 04 04 80 01 08 C5 "Low Platform A with Roof A" 00
+  258 * 31	 04 04 BA 01 08 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A" 00
 
-  264 * 342	 00 04 02 01 09 08 "KWS0" 09 0A 
+  259 * 342	 00 04 02 01 09 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00 
 				00 0A 0E  10 06 03  4F 04 00 00 80 
@@ -1006,12 +987,12 @@
 				0A 00 00  06 10 01  4C 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  265 * 7	 03 04 01 09 00 80 00
-  266 * 33	 04 04 80 01 09 C5 "Low Platform B with Roof A" 00
-  267 * 31	 04 04 BA 01 09 C5 C3 9E 
+  260 * 7	 03 04 01 09 00 80 00
+  261 * 33	 04 04 80 01 09 C5 "Low Platform B with Roof A" 00
+  262 * 31	 04 04 BA 01 09 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A" 00
 
-  268 * 622	 00 04 02 01 24 08 "KWS0" 09 0A 
+  263 * 622	 00 04 02 01 24 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 00 0E  10 06 03  33 04 00 00
@@ -1078,12 +1059,12 @@
 				00 00 01  06 10 06  9A 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  269 * 7	 03 04 01 24 00 80 00
-  270 * 33	 04 04 80 01 24 C5 "Low Platform C with Roof A" 00
-  271 * 31	 04 04 BA 01 24 C5 C3 9E 
+  264 * 7	 03 04 01 24 00 80 00
+  265 * 33	 04 04 80 01 24 C5 "Low Platform C with Roof A" 00
+  266 * 31	 04 04 BA 01 24 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A" 00
 
-  272 * 342	 00 04 02 01 0A 08 "KWS0" 09 0A 
+  267 * 342	 00 04 02 01 0A 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
 				00 00 0E  10 06 03  33 04 00 00 80 
@@ -1122,13 +1103,13 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 00 0E  06 10 03  34 04 00 00
 				00 00 01  06 10 06  9A 04 00 00 80
-  273 * 7	 03 04 01 0A 00 80 00
-  274 * 41	 04 04 80 01 0A C5 "Low Asphalt Platform A with Roof A" 00
-  275 * 44	 04 04 BA 01 0A C5 C3 9E 
+  268 * 7	 03 04 01 0A 00 80 00
+  269 * 41	 04 04 80 01 0A C5 "Low Asphalt Platform A with Roof A" 00
+  270 * 44	 04 04 BA 01 0A C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A" 00
 
-  276 * 342	 00 04 02 01 0B 08 "KWS0" 09 0A 
+  271 * 342	 00 04 02 01 0B 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 0E  10 06 03  4F 04 00 00 80
@@ -1167,13 +1148,13 @@
 				0A 00 00  06 10 01  4E 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  277 * 7	 03 04 01 0B 00 80 00
-  278 * 41	 04 04 80 01 0B C5 "Low Asphalt Platform B with Roof A" 00
-  279 * 44	 04 04 BA 01 0B C5 C3 9E 
+  272 * 7	 03 04 01 0B 00 80 00
+  273 * 41	 04 04 80 01 0B C5 "Low Asphalt Platform B with Roof A" 00
+  274 * 44	 04 04 BA 01 0B C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A" 00
 
-  280 * 622	 00 04 02 01 25 08 "KWS0" 09 0A 
+  275 * 622	 00 04 02 01 25 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
 				00 00 0E  10 06 03  33 04 00 00 
@@ -1240,13 +1221,13 @@
 				00 00 01  06 10 06  9A 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  281 * 7	 03 04 01 25 00 80 00
-  282 * 41	 04 04 80 01 25 C5 "Low Asphalt Platform C with Roof A" 00
-  283 * 44	 04 04 BA 01 25 C5 C3 9E 
+  276 * 7	 03 04 01 25 00 80 00
+  277 * 41	 04 04 80 01 25 C5 "Low Asphalt Platform C with Roof A" 00
+  278 * 44	 04 04 BA 01 25 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A" 00
 
-  284 * 342	 00 04 02 01 0C 08 "KWS0" 09 0A 
+  279 * 342	 00 04 02 01 0C 08 "KWS0" 09 0A 
 				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 00 10  10 06 03  35 04 00 00 80 
@@ -1285,12 +1266,12 @@
 				00 00 00  06 10 03  2E 04 00 00
 				00 00 10  06 10 03  36 04 00 00
 				00 00 03  06 10 06  9A 04 00 00 80
-  285 * 7	 03 04 01 0C 00 80 00
-  286 * 34	 04 04 80 01 0C C5 "High Platform A with Roof B" 00
-  287 * 31	 04 04 BA 01 0C C5 C3 9E 
+  280 * 7	 03 04 01 0C 00 80 00
+  281 * 34	 04 04 80 01 0C C5 "High Platform A with Roof B" 00
+  282 * 31	 04 04 BA 01 0C C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B" 00
 
-  288 * 342	 00 04 02 01 0D 08 "KWS0" 09 0A 
+  283 * 342	 00 04 02 01 0D 08 "KWS0" 09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 10  10 06 03  35 04 00 00 80 
@@ -1329,12 +1310,12 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				0A 00 10  06 10 03  36 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00 80
-  289 * 7	 03 04 01 0D 00 80 00
-  290 * 34	 04 04 80 01 0D C5 "High Platform B with Roof B" 00
-  291 * 31	 04 04 BA 01 0D C5 C3 9E 
+  284 * 7	 03 04 01 0D 00 80 00
+  285 * 34	 04 04 80 01 0D C5 "High Platform B with Roof B" 00
+  286 * 31	 04 04 BA 01 0D C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B" 00
 
-  292 * 622	 00 04 02 01 26 08 "KWS0" 09 0A 
+  287 * 622	 00 04 02 01 26 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 00 10  10 06 03  35 04 00 00
@@ -1401,12 +1382,12 @@
 				0A 00 10  06 10 03  36 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00 80
-  293 * 7	 03 04 01 26 00 80 00
-  294 * 34	 04 04 80 01 26 C5 "High Platform C with Roof B" 00
-  295 * 31	 04 04 BA 01 26 C5 C3 9E 
+  288 * 7	 03 04 01 26 00 80 00
+  289 * 34	 04 04 80 01 26 C5 "High Platform C with Roof B" 00
+  290 * 31	 04 04 BA 01 26 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B" 00
 
-  296 * 342	 00 04 02 01 0E 08 "KWS0" 09 0A 
+  291 * 342	 00 04 02 01 0E 08 "KWS0" 09 0A 
 				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 00 0E  10 06 03  35 04 00 00 80 
@@ -1445,12 +1426,12 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 00 0E  06 10 03  36 04 00 00
 				00 00 01  06 10 06  9A 04 00 00 80
-  297 * 7	 03 04 01 0E 00 80 00
-  298 * 33	 04 04 80 01 0E C5 "Low Platform A with Roof B" 00
-  299 * 31	 04 04 BA 01 0E C5 C3 9E 
+  292 * 7	 03 04 01 0E 00 80 00
+  293 * 33	 04 04 80 01 0E C5 "Low Platform A with Roof B" 00
+  294 * 31	 04 04 BA 01 0E C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B" 00
 
-  300 * 342	 00 04 02 01 0F 08 "KWS0" 09 0A
+  295 * 342	 00 04 02 01 0F 08 "KWS0" 09 0A
 				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00 80 
@@ -1489,12 +1470,12 @@
 				0A 00 00  06 10 01  4C 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  301 * 7	 03 04 01 0F 00 80 00
-  302 * 33	 04 04 80 01 0F C5 "Low Platform B with Roof B" 00
-  303 * 31	 04 04 BA 01 0F C5 C3 9E 
+  296 * 7	 03 04 01 0F 00 80 00
+  297 * 33	 04 04 80 01 0F C5 "Low Platform B with Roof B" 00
+  298 * 31	 04 04 BA 01 0F C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B" 00
 
-  304 * 622	 00 04 02 01 27 08 "KWS0" 09 0A 
+  299 * 622	 00 04 02 01 27 08 "KWS0" 09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 00 0E  10 06 03  35 04 00 00
@@ -1561,12 +1542,12 @@
 				0A 00 0E  06 10 03  36 04 00 00
 				00 00 01  06 10 06  9A 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  305 * 7	 03 04 01 27 00 80 00
-  306 * 33	 04 04 80 01 27 C5 "Low Platform C with Roof B" 00
-  307 * 31	 04 04 BA 01 27 C5 C3 9E 
+  300 * 7	 03 04 01 27 00 80 00
+  301 * 33	 04 04 80 01 27 C5 "Low Platform C with Roof B" 00
+  302 * 31	 04 04 BA 01 27 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B" 00
 
-  308 * 342	 00 04 02 01 10 08 "KWS0" 09 0A 
+  303 * 342	 00 04 02 01 10 08 "KWS0" 09 0A 
 				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
 				00 00 0E  10 06 03  35 04 00 00 80 
@@ -1605,13 +1586,13 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 00 0E  06 10 03  36 04 00 00
 				00 00 01  06 10 06  9A 04 00 00 80
-  309 * 7	 03 04 01 10 00 80 00
-  310 * 41	 04 04 80 01 10 C5 "Low Asphalt Platform A with Roof B" 00
-  311 * 44	 04 04 BA 01 10 C5 C3 9E 
+  304 * 7	 03 04 01 10 00 80 00
+  305 * 41	 04 04 80 01 10 C5 "Low Asphalt Platform A with Roof B" 00
+  306 * 44	 04 04 BA 01 10 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B" 00
 
-  312 * 342	 00 04 02 01 11 08 "KWS0" 09 0A 
+  307 * 342	 00 04 02 01 11 08 "KWS0" 09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00 80
@@ -1650,13 +1631,13 @@
 				0A 00 00  06 10 01  4E 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  313 * 7	 03 04 01 11 00 80 00
-  314 * 41	 04 04 80 01 11 C5 "Low Asphalt Platform B with Roof B" 00
-  315 * 44	 04 04 BA 01 11 C5 C3 9E 
+  308 * 7	 03 04 01 11 00 80 00
+  309 * 41	 04 04 80 01 11 C5 "Low Asphalt Platform B with Roof B" 00
+  310 * 44	 04 04 BA 01 11 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B" 00
 
-  316 * 622	 00 04 02 01 28 08 "KWS0" 09 0A 
+  311 * 622	 00 04 02 01 28 08 "KWS0" 09 0A 
    				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
 				00 00 0E  10 06 03  35 04 00 00 
@@ -1723,23 +1704,23 @@
 				0A 00 0E  06 10 03  36 04 00 00
 				00 00 01  06 10 06  9A 04 00 00
 				0A 00 01  06 10 06  A2 04 00 00 80
-  317 * 7	 03 04 01 28 00 80 00
-  318 * 41	 04 04 80 01 28 C5 "Low Asphalt Platform C with Roof B" 00
-  319 * 44	 04 04 BA 01 28 C5 C3 9E 
+  312 * 7	 03 04 01 28 00 80 00
+  313 * 41	 04 04 80 01 28 C5 "Low Asphalt Platform C with Roof B" 00
+  314 * 44	 04 04 BA 01 28 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B" 00
 
 //Platforms with Buildings	
 
-  320 * 117	 00 04 02 16 B0
+  315 * 117	 00 04 02 16 B0
 				08 
 				"KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7"
 				"KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7" 
 				"KWS7" "KWS7" "KWS7" "KWS7" "KWS7" "KWS7"
 				0B 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02 02
-  321 * 21	 04 04 FF 01 B0 C4 "[KWS] Stations" 00
-  322 * 28	 04 04 BA 01 B0 C4 C3 9E "[KWS] " EC 97 AD EC 82 AC 20 EA B1 B4 EB AC BC 00
-  323 * 537	 00 04 01 01 B0
+  316 * 21	 04 04 FF 01 B0 C4 "[KWS] Stations" 00
+  317 * 28	 04 04 BA 01 B0 C4 C3 9E "[KWS] " EC 97 AD EC 82 AC 20 EA B1 B4 EB AC BC 00
+  318 * 537	 00 04 01 01 B0
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
@@ -1803,13 +1784,13 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  324 * 7	 03 04 01 B0 00 80 00
-  325 * 41	 04 04 80 01 B0 C5 "High Platform A with Low Buildings" 00
-  326 * 42	 04 04 BA 01 B0 C5 C3 9E 
+  319 * 7	 03 04 01 B0 00 80 00
+  320 * 41	 04 04 80 01 B0 C5 "High Platform A with Low Buildings" 00
+  321 * 42	 04 04 BA 01 B0 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  327 * 537	 00 04 01 01 B1 
+  322 * 537	 00 04 01 01 B1 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
@@ -1873,13 +1854,13 @@
 				00 00 00  00 10 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  328 * 7	 03 04 01 B1 00 80 00
-  329 * 41	 04 04 80 01 B1 C5 "High Platform B with Low Buildings" 00
-  330 * 42	 04 04 BA 01 B1 C5 C3 9E 
+  323 * 7	 03 04 01 B1 00 80 00
+  324 * 41	 04 04 80 01 B1 C5 "High Platform B with Low Buildings" 00
+  325 * 42	 04 04 BA 01 B1 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  331 * 717	 00 04 01 01 B2 
+  326 * 717	 00 04 01 01 B2 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
@@ -1961,13 +1942,13 @@
 				00 00 03  00 10 09  B8 04 00 00
 				10 00 03  00 10 09  B8 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  332 * 7	 03 04 01 B2 00 80 00
-  333 * 41	 04 04 80 01 B2 C5 "High Platform C with Low Buildings" 00
-  334 * 42	 04 04 BA 01 B2 C5 C3 9E 
+  327 * 7	 03 04 01 B2 00 80 00
+  328 * 41	 04 04 80 01 B2 C5 "High Platform C with Low Buildings" 00
+  329 * 42	 04 04 BA 01 B2 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  335 * 537	 00 04 01 01 B4
+  330 * 537	 00 04 01 01 B4
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
@@ -2031,13 +2012,13 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  336 * 7	 03 04 01 B4 00 80 00
-  337 * 42	 04 04 80 01 B4 C5 "High Platform A with High Buildings" 00
-  338 * 42	 04 04 BA 01 B4 C5 C3 9E 
+  331 * 7	 03 04 01 B4 00 80 00
+  332 * 42	 04 04 80 01 B4 C5 "High Platform A with High Buildings" 00
+  333 * 42	 04 04 BA 01 B4 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  339 * 537	 00 04 01 01 B5 
+  334 * 537	 00 04 01 01 B5 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
@@ -2101,13 +2082,13 @@
 				00 00 00  10 00 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  340 * 7	 03 04 01 B5 00 80 00
-  341 * 42	 04 04 80 01 B5 C5 "High Platform B with High Buildings" 00
-  342 * 42	 04 04 BA 01 B5 C5 C3 9E 
+  335 * 7	 03 04 01 B5 00 80 00
+  336 * 42	 04 04 80 01 B5 C5 "High Platform B with High Buildings" 00
+  337 * 42	 04 04 BA 01 B5 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  343 * 717	 00 04 01 01 B6 
+  338 * 717	 00 04 01 01 B6 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
@@ -2189,13 +2170,13 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  344 * 7	 03 04 01 B6 00 80 00
-  345 * 42	 04 04 80 01 B6 C5 "High Platform C with High Buildings" 00
-  346 * 42	 04 04 BA 01 B6 C5 C3 9E 
+  339 * 7	 03 04 01 B6 00 80 00
+  340 * 42	 04 04 80 01 B6 C5 "High Platform C with High Buildings" 00
+  341 * 42	 04 04 BA 01 B6 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  347 * 537	 00 04 01 01 B8
+  342 * 537	 00 04 01 01 B8
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 01  2F 04 00 00
@@ -2259,13 +2240,13 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  348 * 7	 03 04 01 B8 00 80 00
-  349 * 40	 04 04 80 01 B8 C5 "Low Platform A with Low Buildings" 00
-  350 * 42	 04 04 BA 01 B8 C5 C3 9E 
+  343 * 7	 03 04 01 B8 00 80 00
+  344 * 40	 04 04 80 01 B8 C5 "Low Platform A with Low Buildings" 00
+  345 * 42	 04 04 BA 01 B8 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  351 * 537	 00 04 01 01 B9 
+  346 * 537	 00 04 01 01 B9 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
@@ -2329,13 +2310,13 @@
 				00 00 00  00 10 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  352 * 7	 03 04 01 B9 00 80 00
-  353 * 40	 04 04 80 01 B9 C5 "Low Platform B with Low Buildings" 00
-  354 * 42	 04 04 BA 01 B9 C5 C3 9E 
+  347 * 7	 03 04 01 B9 00 80 00
+  348 * 40	 04 04 80 01 B9 C5 "Low Platform B with Low Buildings" 00
+  349 * 42	 04 04 BA 01 B9 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  355 * 717	 00 04 01 01 BA 
+  350 * 717	 00 04 01 01 BA 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
@@ -2417,13 +2398,13 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  356 * 7	 03 04 01 BA 00 80 00
-  357 * 40	 04 04 80 01 BA C5 "Low Platform C with Low Buildings" 00
-  358 * 42	 04 04 BA 01 BA C5 C3 9E 
+  351 * 7	 03 04 01 BA 00 80 00
+  352 * 40	 04 04 80 01 BA C5 "Low Platform C with Low Buildings" 00
+  353 * 42	 04 04 BA 01 BA C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  359 * 537	 00 04 01 01 BB
+  354 * 537	 00 04 01 01 BB
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 01  2F 04 00 00
@@ -2487,13 +2468,13 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  360 * 7	 03 04 01 BB 00 80 00
-  361 * 41	 04 04 80 01 BB C5 "Low Platform A with High Buildings" 00
-  362 * 42	 04 04 BA 01 BB C5 C3 9E 
+  355 * 7	 03 04 01 BB 00 80 00
+  356 * 41	 04 04 80 01 BB C5 "Low Platform A with High Buildings" 00
+  357 * 42	 04 04 BA 01 BB C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  363 * 537	 00 04 01 01 BC 
+  358 * 537	 00 04 01 01 BC 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
@@ -2557,13 +2538,13 @@
 				00 00 00  10 00 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  364 * 7	 03 04 01 BC 00 80 00
-  365 * 41	 04 04 80 01 BC C5 "Low Platform B with High Buildings" 00
-  366 * 42	 04 04 BA 01 BC C5 C3 9E 
+  359 * 7	 03 04 01 BC 00 80 00
+  360 * 41	 04 04 80 01 BC C5 "Low Platform B with High Buildings" 00
+  361 * 42	 04 04 BA 01 BC C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  367 * 717	 00 04 01 01 BD 
+  362 * 717	 00 04 01 01 BD 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
@@ -2645,13 +2626,13 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  368 * 7	 03 04 01 BD 00 80 00
-  369 * 41	 04 04 80 01 BD C5 "Low Platform C with High Buildings" 00
-  370 * 42	 04 04 BA 01 BD C5 C3 9E 
+  363 * 7	 03 04 01 BD 00 80 00
+  364 * 41	 04 04 80 01 BD C5 "Low Platform C with High Buildings" 00
+  365 * 42	 04 04 BA 01 BD C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  371 * 537	 00 04 01 01 BE
+  366 * 537	 00 04 01 01 BE
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
@@ -2715,14 +2696,14 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  372 * 7	 03 04 01 BE 00 80 00
-  373 * 48	 04 04 80 01 BE C5 "Low Asphalt Platform A with Low Buildings" 00
-  374 * 55	 04 04 BA 01 BE C5 C3 9E 
+  367 * 7	 03 04 01 BE 00 80 00
+  368 * 48	 04 04 80 01 BE C5 "Low Asphalt Platform A with Low Buildings" 00
+  369 * 55	 04 04 BA 01 BE C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  375 * 537	 00 04 01 01 BF 
+  370 * 537	 00 04 01 01 BF 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
@@ -2786,14 +2767,14 @@
 				00 00 00  00 10 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  376 * 7	 03 04 01 BF 00 80 00
-  377 * 48	 04 04 80 01 BF C5 "Low Asphalt Platform B with Low Buildings" 00
-  378 * 55	 04 04 BA 01 BF C5 C3 9E 
+  371 * 7	 03 04 01 BF 00 80 00
+  372 * 48	 04 04 80 01 BF C5 "Low Asphalt Platform B with Low Buildings" 00
+  373 * 55	 04 04 BA 01 BF C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  379 * 717	 00 04 01 01 C0 
+  374 * 717	 00 04 01 01 C0 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
@@ -2875,14 +2856,14 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  380 * 7	 03 04 01 C0 00 80 00
-  381 * 48	 04 04 80 01 C0 C5 "Low Asphalt Platform C with Low Buildings" 00
-  382 * 55	 04 04 BA 01 C0 C5 C3 9E 
+  375 * 7	 03 04 01 C0 00 80 00
+  376 * 48	 04 04 80 01 C0 C5 "Low Asphalt Platform C with Low Buildings" 00
+  377 * 55	 04 04 BA 01 C0 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  383 * 537	 00 04 01 01 C1
+  378 * 537	 00 04 01 01 C1
    				09 0A
 				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
@@ -2946,14 +2927,14 @@
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 03  06 10 06  9A 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  384 * 7	 03 04 01 C1 00 80 00
-  385 * 49	 04 04 80 01 C1 C5 "Low Asphalt Platform A with High Buildings" 00
-  386 * 55	 04 04 BA 01 C1 C5 C3 9E 
+  379 * 7	 03 04 01 C1 00 80 00
+  380 * 49	 04 04 80 01 C1 C5 "Low Asphalt Platform A with High Buildings" 00
+  381 * 55	 04 04 BA 01 C1 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  387 * 537	 00 04 01 01 C2 
+  382 * 537	 00 04 01 01 C2 
 				09 0A 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
@@ -3017,14 +2998,14 @@
 				00 00 00  10 00 0C  BA 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  388 * 7	 03 04 01 C2 00 80 00
-  389 * 49	 04 04 80 01 C2 C5 "Low Asphalt Platform B with High Buildings" 00
-  390 * 55	 04 04 BA 01 C2 C5 C3 9E 
+  383 * 7	 03 04 01 C2 00 80 00
+  384 * 49	 04 04 80 01 C2 C5 "Low Asphalt Platform B with High Buildings" 00
+  385 * 55	 04 04 BA 01 C2 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  391 * 717	 00 04 01 01 C3 
+  386 * 717	 00 04 01 01 C3 
 				09 0A 
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
@@ -3106,14 +3087,14 @@
 				00 00 03  06 10 06  9A 04 00 00
 				0A 00 03  06 10 06  A2 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  392 * 7	 03 04 01 C3 00 80 00
-  393 * 49	 04 04 80 01 C3 C5 "Low Asphalt Platform C with High Buildings" 00
-  394 * 55	 04 04 BA 01 C3 C5 C3 9E 
+  387 * 7	 03 04 01 C3 00 80 00
+  388 * 49	 04 04 80 01 C3 C5 "Low Asphalt Platform C with High Buildings" 00
+  389 * 55	 04 04 BA 01 C3 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  395 * 357	 00 04 01 01 B3 
+  390 * 357	 00 04 01 01 B3 
 				09 0A 
 				F4 03 00 00
 				00 00 00  10 00 0C  B9 04 00 00
@@ -3159,12 +3140,12 @@
 				00 00 00  00 10 0C  BA 04 00 00
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 0C  10 10 10  B0 04 00 00 80
-  396 * 7	 03 04 01 B3 00 80 00
-  397 * 37	 04 04 80 01 B3 C5 "Low Buildings with No Platform" 00
-  398 * 28	 04 04 BA 01 B3 C5 C3 9E 
+  391 * 7	 03 04 01 B3 00 80 00
+  392 * 37	 04 04 80 01 B3 C5 "Low Buildings with No Platform" 00
+  393 * 28	 04 04 BA 01 B3 C5 C3 9E 
 				EC A0 80 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  399 * 357	 00 04 01 01 B7 
+  394 * 357	 00 04 01 01 B7 
 				09 0A 
 				F4 03 00 00
 				00 00 00  10 00 0C  B9 04 00 00
@@ -3210,12 +3191,12 @@
 				00 00 00  00 10 0C  BA 04 00 00
 				10 00 00  00 10 0C  BA 04 00 00
 				00 00 0C  10 10 30  B2 04 00 00 80
-  400 * 7	 03 04 01 B7 00 80 00
-  401 * 38	 04 04 80 01 B7 C5 "High Buildings with No Platform" 00
-  402 * 28	 04 04 BA 01 B7 C5 C3 9E 
+  395 * 7	 03 04 01 B7 00 80 00
+  396 * 38	 04 04 80 01 B7 C5 "High Buildings with No Platform" 00
+  397 * 28	 04 04 BA 01 B7 C5 C3 9E 
 				EA B3 A0 EC B8 B5 20 EC 84 A0 EC 83 81 EC 97 AD EC 82 AC 00
 
-  403 * 731	 00 04 03 01 C4 15 FF 0B 02
+  398 * 731	 00 04 03 01 C4 15 FF 0B 02
 				09 18
 				F4 03 00 00
 				00 00 80  00 00 00  C3 04 00 00
@@ -3303,23 +3284,23 @@
 				F3 03 00 00 
 				00 00 80  00 00 00  C3 04 00 00
 				00 00 00  10 10 1C  C2 04 00 00 80
-  404 * 6	 07 02 01 02 00 01
-  405 * 30	 02 04 A5 85 60 00 00 FF FF 03 00 80 00 00 0F 00 02 80 10 00 7F 00 04 80 80 00 FF 01 06 80
-  406 * 6	 07 02 01 03 00 01
+  399 * 6	 07 02 01 02 00 01
+  400 * 30	 02 04 A5 85 60 00 00 FF FF 03 00 80 00 00 0F 00 02 80 10 00 7F 00 04 80 80 00 FF 01 06 80
+  401 * 6	 07 02 01 03 00 01
 //!!Warning (100): Default ID appears earlier in sprite.
-//!!Warning (94): Redefining ID A5 not used since previous definition at sprite 405.
-  407 * 18	 02 04 A5 85 60 00 00 FF FF 01 00 80 00 00 00 00 00 80
-  408 * 14	 02 04 A1 81 40 08 0F 01 08 80 00 00 10 80
-  409 * 14	 02 04 A2 81 40 08 F0 01 00 80 00 00 A1 00
-  410 * 18	 02 04 A4 85 7E A2 20 FF FF \2+ 7E A5 00 FF FF 00 00 80
-  411 * 17	 02 04 A0 85 0C 00 FF FF 01 A4 00 14 00 14 00 03 00
-  412 * 17	 02 04 A3 85 0C 00 FF FF 01 00 80 14 00 14 00 03 00
-  413 * 10	 03 04 01 C4 01 FF A3 00 A0 00
-  414 * 20	 04 04 80 01 C4 C5 "Low Buildings" 00
-  415 * 22	 04 04 BA 01 C4 C5 C3 9E 
+//!!Warning (94): Redefining ID A5 not used since previous definition at sprite 400.
+  402 * 18	 02 04 A5 85 60 00 00 FF FF 01 00 80 00 00 00 00 00 80
+  403 * 14	 02 04 A1 81 40 08 0F 01 08 80 00 00 10 80
+  404 * 14	 02 04 A2 81 40 08 F0 01 00 80 00 00 A1 00
+  405 * 18	 02 04 A4 85 7E A2 20 FF FF \2+ 7E A5 00 FF FF 00 00 80
+  406 * 17	 02 04 A0 85 0C 00 FF FF 01 A4 00 14 00 14 00 03 00
+  407 * 17	 02 04 A3 85 0C 00 FF FF 01 00 80 14 00 14 00 03 00
+  408 * 10	 03 04 01 C4 01 FF A3 00 A0 00
+  409 * 20	 04 04 80 01 C4 C5 "Low Buildings" 00
+  410 * 22	 04 04 BA 01 C4 C5 C3 9E 
 				EC A0 80 EC B8 B5 20 EC 97 AD EC 82 AC 00
 
-  416 * 731	 00 04 03 01 C5 15 FF 0B 02
+  411 * 731	 00 04 03 01 C5 15 FF 0B 02
 				09 18
 				F4 03 00 00
 				00 00 80  00 00 00  C3 04 00 00
@@ -3407,14 +3388,14 @@
 				F3 03 00 00 
 				00 00 80  00 00 00  C3 04 00 00
 				00 00 00  10 10 1C  C9 04 00 00 80
-  417 * 10	 03 04 01 C5 01 FF A3 00 A0 00
-  418 * 21	 04 04 80 01 C5 C5 "High Buildings" 00
-  419 * 22	 04 04 BA 01 C5 C5 C3 9E 
+  412 * 10	 03 04 01 C5 01 FF A3 00 A0 00
+  413 * 21	 04 04 80 01 C5 C5 "High Buildings" 00
+  414 * 22	 04 04 BA 01 C5 C5 C3 9E 
 				EA B3 A0 EC B8 B5 20 EC 97 AD EC 82 AC 00
 
 
 //Platforms with Overpass
-  420 * 82	 00 04 02 01 12 08 "KWS1" 09 02 
+  415 * 82	 00 04 02 01 12 08 "KWS1" 09 02 
 				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 00 03  10 06 10  37 04 00 00 
@@ -3423,15 +3404,15 @@
 				00 00 00  06 10 03  2E 04 00 00
 				00 00 03  06 10 10  38 04 00 00
 				00 05 06  10 06 0C  46 04 00 00 80
-  421 * 7	 03 04 01 12 00 03 00
-  422 * 21	 04 04 80 01 12 C4 "[KWS] " "Overpass" 00
-  423 * 21	 04 04 BA 01 12 C4 C3 9E 
+  416 * 7	 03 04 01 12 00 03 00
+  417 * 21	 04 04 80 01 12 C4 "[KWS] " "Overpass" 00
+  418 * 21	 04 04 BA 01 12 C4 C3 9E 
 				"[KWS] " EC 9C A1 EA B5 90 00
-  424 * 36	 04 04 80 01 12 C5 "High Platform A with Overpass" 00
-  425 * 29	 04 04 BA 01 12 C5 C3 9E 
+  419 * 36	 04 04 80 01 12 C5 "High Platform A with Overpass" 00
+  420 * 29	 04 04 BA 01 12 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 00
 
-  426 * 114	 00 04 03 01 13 08 "KWS1" 0F 00 09 04 
+  421 * 114	 00 04 03 01 13 08 "KWS1" 0F 00 09 04 
 				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 03  10 06 10  53 04 00 00 
@@ -3445,14 +3426,14 @@
 				00 00 00  10 10 10  2D 04 00 00 80
 				F3 03 00 00 
 				00 00 00  10 10 10  2E 04 00 00 80
-  427 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
-  428 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
-  429 * 10	 03 04 01 13 01 FF A1 00 A0 00
-  430 * 36	 04 04 80 01 13 C5 "High Platform B with Overpass" 00
-  431 * 29	 04 04 BA 01 13 C5 C3 9E 
+  422 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
+  423 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
+  424 * 10	 03 04 01 13 01 FF A1 00 A0 00
+  425 * 36	 04 04 80 01 13 C5 "High Platform B with Overpass" 00
+  426 * 29	 04 04 BA 01 13 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 00
 
-  432 * 82	 00 04 02 01 14 08 "KWS1" 09 02 
+  427 * 82	 00 04 02 01 14 08 "KWS1" 09 02 
 				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 
 				00 00 01  10 06 10  47 04 00 00 
@@ -3461,12 +3442,12 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 00 01  06 10 10  48 04 00 00
 				00 05 06  10 06 0C  46 04 00 00 80
-  433 * 7	 03 04 01 14 00 03 00
-  434 * 35	 04 04 80 01 14 C5 "Low Platform A with Overpass" 00
-  435 * 29	 04 04 BA 01 14 C5 C3 9E 
+  428 * 7	 03 04 01 14 00 03 00
+  429 * 35	 04 04 80 01 14 C5 "Low Platform A with Overpass" 00
+  430 * 29	 04 04 BA 01 14 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 00
 
-  436 * 114	 00 04 03 01 15 08 "KWS1" 0F 00 09 04 
+  431 * 114	 00 04 03 01 15 08 "KWS1" 0F 00 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
 				00 0A 01  10 06 10  53 04 00 00 
@@ -3480,14 +3461,14 @@
 				00 00 00  10 10 10  2F 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 10 10  30 04 00 00 80
-  437 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
-  438 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
-  439 * 10	 03 04 01 15 01 FF A1 00 A0 00
-  440 * 35	 04 04 80 01 15 C5 "Low Platform B with Overpass" 00
-  441 * 29	 04 04 BA 01 15 C5 C3 9E 
+  432 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
+  433 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
+  434 * 10	 03 04 01 15 01 FF A1 00 A0 00
+  435 * 35	 04 04 80 01 15 C5 "Low Platform B with Overpass" 00
+  436 * 29	 04 04 BA 01 15 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 00
 
-  442 * 82	 00 04 02 01 16 08 "KWS1" 09 02 
+  437 * 82	 00 04 02 01 16 08 "KWS1" 09 02 
 				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
 				00 00 01  10 06 10  47 04 00 00 
@@ -3496,13 +3477,13 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 00 01  06 10 10  48 04 00 00
 				00 05 06  10 06 0C  46 04 00 00 80
-  443 * 7	 03 04 01 16 00 03 00
-  444 * 43	 04 04 80 01 16 C5 "Low Asphalt Platform A with Overpass" 00
-  445 * 42	 04 04 BA 01 16 C5 C3 9E 
+  438 * 7	 03 04 01 16 00 03 00
+  439 * 43	 04 04 80 01 16 C5 "Low Asphalt Platform A with Overpass" 00
+  440 * 42	 04 04 BA 01 16 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 00
 
-  446 * 114	 00 04 03 01 17 08 "KWS1" 0F 00 09 04 
+  441 * 114	 00 04 03 01 17 08 "KWS1" 0F 00 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 01  10 06 10  53 04 00 00
@@ -3516,15 +3497,15 @@
 				00 00 00  10 10 10  31 04 00 00 80 
 				F3 03 00 00 
 				00 00 00  10 10 10  32 04 00 00 80
-  447 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
-  448 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
-  449 * 10	 03 04 01 17 01 FF A1 00 A0 00
-  450 * 43	 04 04 80 01 17 C5 "Low Asphalt Platform B with Overpass" 00
-  451 * 42	 04 04 BA 01 17 C5 C3 9E 
+  442 * 14	 02 04 A1 81 0C 00 FF 01 02 80 14 14 02 00
+  443 * 14	 02 04 A0 81 0C 00 FF 01 00 80 14 14 03 00
+  444 * 10	 03 04 01 17 01 FF A1 00 A0 00
+  445 * 43	 04 04 80 01 17 C5 "Low Asphalt Platform B with Overpass" 00
+  446 * 42	 04 04 BA 01 17 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 00
 
-  452 * 192	 00 04 02 01 29 08 "KWS1" 09 04 
+  447 * 192	 00 04 02 01 29 08 "KWS1" 09 04 
 				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 00 03  10 06 10  37 04 00 00
@@ -3545,17 +3526,17 @@
 				00 00 03  06 10 10  38 04 00 00
 				00 05 06  10 06 0C  46 04 00 00
 				00 00 03  06 10 10  6A 04 00 00 80
-  453 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0C 0C 02 80 3A 3A 00 80
-  454 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0C 0C 02 80 3A 3A A3 00
-  455 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
-  456 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  457 * 10	 03 04 01 29 01 FF A1 00 A0 00
-  458 * 45	 04 04 80 01 29 C5 "High Platform A with Overpass and Roof" 00
-  459 * 38	 04 04 BA 01 29 C5 C3 9E 
+  448 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0C 0C 02 80 3A 3A 00 80
+  449 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0C 0C 02 80 3A 3A A3 00
+  450 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
+  451 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  452 * 10	 03 04 01 29 01 FF A1 00 A0 00
+  453 * 45	 04 04 80 01 29 C5 "High Platform A with Overpass and Roof" 00
+  454 * 38	 04 04 BA 01 29 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  460 * 222	 00 04 02 01 2A 08 "KWS1" 09 06
+  455 * 222	 00 04 02 01 2A 08 "KWS1" 09 06
 				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 03  10 06 10  53 04 00 00
@@ -3581,17 +3562,17 @@
 				00 00 00  10 10 10  33 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 10 10  34 04 00 00 80
-  461 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0D 0D 02 80 3B 3B 00 80
-  462 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0D 0D 02 80 3B 3B A3 00
-  463 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
-  464 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  465 * 10	 03 04 01 2A 01 FF A1 00 A0 00
-  466 * 45	 04 04 80 01 2A C5 "High Platform B with Overpass and Roof" 00
-  467 * 38	 04 04 BA 01 2A C5 C3 9E 
+  456 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0D 0D 02 80 3B 3B 00 80
+  457 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0D 0D 02 80 3B 3B A3 00
+  458 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
+  459 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  460 * 10	 03 04 01 2A 01 FF A1 00 A0 00
+  461 * 45	 04 04 80 01 2A C5 "High Platform B with Overpass and Roof" 00
+  462 * 38	 04 04 BA 01 2A C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  468 * 192	 00 04 02 01 2B 08 "KWS1" 09 04 
+  463 * 192	 00 04 02 01 2B 08 "KWS1" 09 04 
 				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00
 				00 00 01  10 06 10  47 04 00 00 
@@ -3612,17 +3593,17 @@
 				00 00 01  06 10 10  48 04 00 00
 				00 05 06  10 06 0C  46 04 00 00
 				00 00 01  06 10 10  72 04 00 00 80
-  469 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0E 0E 02 80 3D 3D 00 80
-  470 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0E 0E 02 80 3D 3D A3 00
-  471 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
-  472 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  473 * 10	 03 04 01 2B 01 FF A1 00 A0 00
-  474 * 44	 04 04 80 01 2B C5 "Low Platform A with Overpass and Roof" 00
-  475 * 38	 04 04 BA 01 2B C5 C3 9E 
+  464 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0E 0E 02 80 3D 3D 00 80
+  465 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0E 0E 02 80 3D 3D A3 00
+  466 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
+  467 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  468 * 10	 03 04 01 2B 01 FF A1 00 A0 00
+  469 * 44	 04 04 80 01 2B C5 "Low Platform A with Overpass and Roof" 00
+  470 * 38	 04 04 BA 01 2B C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  476 * 226	 00 04 04 01 2C 08 "KWS1" 0B 02 0F 00 09 06
+  471 * 226	 00 04 04 01 2C 08 "KWS1" 0B 02 0F 00 09 06
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
 				00 0A 01  10 06 10  63 04 00 00 
@@ -3648,17 +3629,17 @@
 				00 00 00  10 10 10  35 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 10 10  36 04 00 00 80
-  477 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0F 0F 02 80 3E 3E 00 80
-  478 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0F 0F 02 80 3E 3E A3 00
-  479 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
-  480 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  481 * 10	 03 04 01 2C 01 FF A1 00 A0 00
-  482 * 44	 04 04 80 01 2C C5 "Low Platform B with Overpass and Roof" 00
-  483 * 38	 04 04 BA 01 2C C5 C3 9E 
+  472 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 0F 0F 02 80 3E 3E 00 80
+  473 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 0F 0F 02 80 3E 3E A3 00
+  474 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
+  475 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  476 * 10	 03 04 01 2C 01 FF A1 00 A0 00
+  477 * 44	 04 04 80 01 2C C5 "Low Platform B with Overpass and Roof" 00
+  478 * 38	 04 04 BA 01 2C C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  484 * 196	 00 04 04 01 2D 08 "KWS1" 0B 02 0F 00 09 04 
+  479 * 196	 00 04 04 01 2D 08 "KWS1" 0B 02 0F 00 09 04 
 				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00
 				00 00 01  10 06 10  47 04 00 00
@@ -3679,18 +3660,18 @@
 				00 00 01  06 10 10  48 04 00 00
 				00 05 06  10 06 0C  46 04 00 00
 				00 00 01  06 10 10  72 04 00 00 80
-  485 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 10 10 02 80 40 40 00 80
-  486 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 10 10 02 80 40 40 A3 00
-  487 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
-  488 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  489 * 10	 03 04 01 2D 01 FF A1 00 A0 00
-  490 * 52	 04 04 80 01 2D C5 "Low Asphalt Platform A with Overpass and Roof" 00
-  491 * 51	 04 04 BA 01 2D C5 C3 9E 
+  480 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 10 10 02 80 40 40 00 80
+  481 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 10 10 02 80 40 40 A3 00
+  482 * 14	 02 04 A1 81 0C 00 FF 01 00 80 14 14 03 00
+  483 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  484 * 10	 03 04 01 2D 01 FF A1 00 A0 00
+  485 * 52	 04 04 80 01 2D C5 "Low Asphalt Platform A with Overpass and Roof" 00
+  486 * 51	 04 04 BA 01 2D C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  492 * 226	 00 04 04 01 2E 08 "KWS1" 0B 02 0F 00 09 06
+  487 * 226	 00 04 04 01 2E 08 "KWS1" 0B 02 0F 00 09 06
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00 
 				00 0A 01  10 06 10  63 04 00 00
@@ -3715,34 +3696,34 @@
 				00 00 00  10 10 10  37 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 10 10  38 04 00 00 80
-  493 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 11 11 02 80 41 41 00 80
-  494 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 11 11 02 80 41 41 A3 00
-  495 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
-  496 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
-  497 * 10	 03 04 01 2E 01 FF A1 00 A0 00
-  498 * 52	 04 04 80 01 2E C5 "Low Asphalt Platform B with Overpass and Roof" 00
-  499 * 51	 04 04 BA 01 2E C5 C3 9E 
+  488 * 19	 02 04 A3 81 68 0F 00 FF 02 02 80 11 11 02 80 41 41 00 80
+  489 * 19	 02 04 A2 81 68 01 00 FF 02 02 80 11 11 02 80 41 41 A3 00
+  490 * 14	 02 04 A1 81 0C 00 FF 01 04 80 14 14 02 00
+  491 * 14	 02 04 A0 81 0C 00 FF 01 A2 00 14 14 03 00
+  492 * 10	 03 04 01 2E 01 FF A1 00 A0 00
+  493 * 52	 04 04 80 01 2E C5 "Low Asphalt Platform B with Overpass and Roof" 00
+  494 * 51	 04 04 BA 01 2E C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC 9C A1 EA B5 90 
 				" + " EC A7 80 EB B6 95 00
 
-  500 * 12	 00 04 01 06 29 0B 02 02 02 02 02 02
+  495 * 12	 00 04 01 06 29 0B 02 02 02 02 02 02
 
-  501 * 42	 00 04 02 01 1E 08 "KWS1" 09 02 
+  496 * 42	 00 04 02 01 1E 08 "KWS1" 09 02 
 				F4 03 00 00 05 00 06 06 10 0C 45 04 00 00 80
 				F3 03 00 00 00 05 06 10 06 0C 46 04 00 00 80
-  502 * 7	 03 04 01 1E 00 03 00
-  503 * 15	 04 04 80 01 1E C5 "Overpass" 00
-  504 * 15	 04 04 BA 01 1E C5 C3 9E 
+  497 * 7	 03 04 01 1E 00 03 00
+  498 * 15	 04 04 80 01 1E C5 "Overpass" 00
+  499 * 15	 04 04 BA 01 1E C5 C3 9E 
 				EC 9C A1 EA B5 90 00
 
-  505 * 42	 00 04 02 01 1F 08 "WAYP" 09 02 
+  500 * 42	 00 04 02 01 1F 08 "WAYP" 09 02 
 				F4 03 00 00 05 00 06 06 10 0C 45 04 00 00 80
 				F3 03 00 00 00 05 06 10 06 0C 46 04 00 00 80
-  506 * 7	 03 04 01 1F 00 03 00
+  501 * 7	 03 04 01 1F 00 03 00
 
 //Platform Facilities
-  507 * 82	 00 04 02 01 31 08 "KWS3" 09 02
+  502 * 82	 00 04 02 01 31 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00 
 				00 00 10  10 06 03  33 04 00 00
@@ -3751,16 +3732,16 @@
 				00 00 00  06 10 03  2E 04 00 00
 				00 00 10  06 10 03  34 04 00 00
 				02 0F 07  04 01 04  7C 04 00 00 80
-  508 * 7	 03 04 01 31 00 03 00
-  509 * 23	 04 04 80 01 31 C4 "[KWS] " "Facilities" 00
-  510 * 24	 04 04 BA 01 31 C4 C3 9E 
+  503 * 7	 03 04 01 31 00 03 00
+  504 * 23	 04 04 80 01 31 C4 "[KWS] " "Facilities" 00
+  505 * 24	 04 04 BA 01 31 C4 C3 9E 
 				"[KWS] " EC 8B 9C EC 84 A4 EB AC BC 00
-  511 * 42	 04 04 80 01 31 C5 "High Platform A with Roof A and LED" 00
-  512 * 43	 04 04 BA 01 31 C5 C3 9E 
+  506 * 42	 04 04 80 01 31 C5 "High Platform A with Roof A and LED" 00
+  507 * 43	 04 04 BA 01 31 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  513 * 82	 00 04 02 01 32 08 "KWS3" 09 02 
+  508 * 82	 00 04 02 01 32 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 10  10 06 03  4F 04 00 00
@@ -3769,13 +3750,13 @@
 				0A 00 00  06 10 03  4A 04 00 00 
 				0A 00 10  06 10 03  50 04 00 00
 				0B 0F 07  04 01 04  7C 04 00 00 80
-  514 * 7	 03 04 01 32 00 03 00
-  515 * 42	 04 04 80 01 32 C5 "High Platform B with Roof A and LED" 00
-  516 * 43	 04 04 BA 01 32 C5 C3 9E 
+  509 * 7	 03 04 01 32 00 03 00
+  510 * 42	 04 04 80 01 32 C5 "High Platform B with Roof A and LED" 00
+  511 * 43	 04 04 BA 01 32 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  517 * 142	 00 04 02 01 33 08 "KWS3" 09 02 
+  512 * 142	 00 04 02 01 33 08 "KWS3" 09 02 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00 
 				00 00 10  10 06 03  33 04 00 00
@@ -3790,13 +3771,13 @@
 				0A 00 00  06 10 03  4A 04 00 00 
 				0A 00 10  06 10 03  50 04 00 00
 				0B 0F 07  04 01 04  7C 04 00 00 80
-  518 * 7	 03 04 01 33 00 03 00
-  519 * 42	 04 04 80 01 33 C5 "High Platform C with Roof A and LED" 00
-  520 * 43	 04 04 BA 01 33 C5 C3 9E 
+  513 * 7	 03 04 01 33 00 03 00
+  514 * 42	 04 04 80 01 33 C5 "High Platform C with Roof A and LED" 00
+  515 * 43	 04 04 BA 01 33 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  521 * 82	 00 04 02 01 34 08 "KWS3" 09 02
+  516 * 82	 00 04 02 01 34 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 
 				00 00 0E  10 06 03  33 04 00 00
@@ -3805,13 +3786,13 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 00 0E  06 10 03  34 04 00 00
 				02 0F 05  04 01 04  7C 04 00 00 80
-  522 * 7	 03 04 01 34 00 03 00
-  523 * 41	 04 04 80 01 34 C5 "Low Platform A with Roof A and LED" 00
-  524 * 43	 04 04 BA 01 34 C5 C3 9E 
+  517 * 7	 03 04 01 34 00 03 00
+  518 * 41	 04 04 80 01 34 C5 "Low Platform A with Roof A and LED" 00
+  519 * 43	 04 04 BA 01 34 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  525 * 82	 00 04 02 01 35 08 "KWS3" 09 02
+  520 * 82	 00 04 02 01 35 08 "KWS3" 09 02
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				00 0A 0E  10 06 03  4F 04 00 00
@@ -3820,13 +3801,13 @@
 				0A 00 00  06 10 01  4C 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  526 * 7	 03 04 01 35 00 03 00
-  527 * 41	 04 04 80 01 35 C5 "Low Platform B with Roof A and LED" 00
-  528 * 43	 04 04 BA 01 35 C5 C3 9E 
+  521 * 7	 03 04 01 35 00 03 00
+  522 * 41	 04 04 80 01 35 C5 "Low Platform B with Roof A and LED" 00
+  523 * 43	 04 04 BA 01 35 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  529 * 142	 00 04 02 01 36 08 "KWS3" 09 02
+  524 * 142	 00 04 02 01 36 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 
 				00 00 0E  10 06 03  33 04 00 00
@@ -3841,13 +3822,13 @@
 				0A 00 00  06 10 01  4C 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  530 * 7	 03 04 01 36 00 03 00
-  531 * 41	 04 04 80 01 36 C5 "Low Platform C with Roof A and LED" 00
-  532 * 43	 04 04 BA 01 36 C5 C3 9E 
+  525 * 7	 03 04 01 36 00 03 00
+  526 * 41	 04 04 80 01 36 C5 "Low Platform C with Roof A and LED" 00
+  527 * 43	 04 04 BA 01 36 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  533 * 82	 00 04 02 01 37 08 "KWS3" 09 02
+  528 * 82	 00 04 02 01 37 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00 
 				00 00 0E  10 06 03  33 04 00 00
@@ -3856,14 +3837,14 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 00 0E  06 10 03  34 04 00 00
 				02 0F 05  04 01 04  7C 04 00 00 80
-  534 * 7	 03 04 01 37 00 03 00
-  535 * 49	 04 04 80 01 37 C5 "Low Asphalt Platform A with Roof A and LED" 00
-  536 * 56	 04 04 BA 01 37 C5 C3 9E 
+  529 * 7	 03 04 01 37 00 03 00
+  530 * 49	 04 04 80 01 37 C5 "Low Asphalt Platform A with Roof A and LED" 00
+  531 * 56	 04 04 BA 01 37 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  537 * 82	 00 04 02 01 38 08 "KWS3" 09 02
+  532 * 82	 00 04 02 01 38 08 "KWS3" 09 02
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 0E  10 06 03  4F 04 00 00
@@ -3872,14 +3853,14 @@
 				0A 00 00  06 10 01  4E 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  538 * 7	 03 04 01 38 00 03 00
-  539 * 49	 04 04 80 01 38 C5 "Low Asphalt Platform B with Roof A and LED" 00
-  540 * 56	 04 04 BA 01 38 C5 C3 9E 
+  533 * 7	 03 04 01 38 00 03 00
+  534 * 49	 04 04 80 01 38 C5 "Low Asphalt Platform B with Roof A and LED" 00
+  535 * 56	 04 04 BA 01 38 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  541 * 142	 00 04 02 01 39 08 "KWS3" 09 02
+  536 * 142	 00 04 02 01 39 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00 
 				00 00 0E  10 06 03  33 04 00 00
@@ -3894,14 +3875,14 @@
 				0A 00 00  06 10 01  4E 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  542 * 7	 03 04 01 39 00 03 00
-  543 * 49	 04 04 80 01 39 C5 "Low Asphalt Platform C with Roof A and LED" 00
-  544 * 56	 04 04 BA 01 39 C5 C3 9E 
+  537 * 7	 03 04 01 39 00 03 00
+  538 * 49	 04 04 80 01 39 C5 "Low Asphalt Platform C with Roof A and LED" 00
+  539 * 56	 04 04 BA 01 39 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  545 * 82	 00 04 02 01 3A 08 "KWS3" 09 02
+  540 * 82	 00 04 02 01 3A 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00 
 				00 00 10  10 06 03  35 04 00 00
@@ -3910,13 +3891,13 @@
 				00 00 00  06 10 03  2E 04 00 00
 				00 00 10  06 10 03  36 04 00 00
 				02 0F 07  04 01 04  7C 04 00 00 80
-  546 * 7	 03 04 01 3A 00 03 00
-  547 * 42	 04 04 80 01 3A C5 "High Platform A with Roof B and LED" 00
-  548 * 43	 04 04 BA 01 3A C5 C3 9E 
+  541 * 7	 03 04 01 3A 00 03 00
+  542 * 42	 04 04 80 01 3A C5 "High Platform A with Roof B and LED" 00
+  543 * 43	 04 04 BA 01 3A C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  549 * 82	 00 04 02 01 3B 08 "KWS3" 09 02 
+  544 * 82	 00 04 02 01 3B 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 10  10 06 03  35 04 00 00
@@ -3925,13 +3906,13 @@
 				0A 00 00  06 10 03  4A 04 00 00 
 				0A 00 10  06 10 03  36 04 00 00
 				0B 0F 07  04 01 04  7C 04 00 00 80
-  550 * 7	 03 04 01 3B 00 03 00
-  551 * 42	 04 04 80 01 3B C5 "High Platform B with Roof B and LED" 00
-  552 * 43	 04 04 BA 01 3B C5 C3 9E 
+  545 * 7	 03 04 01 3B 00 03 00
+  546 * 42	 04 04 80 01 3B C5 "High Platform B with Roof B and LED" 00
+  547 * 43	 04 04 BA 01 3B C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  553 * 142	 00 04 02 01 3C 08 "KWS3" 09 02 
+  548 * 142	 00 04 02 01 3C 08 "KWS3" 09 02 
    				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00 
 				00 00 10  10 06 03  35 04 00 00
@@ -3946,13 +3927,13 @@
 				0A 00 00  06 10 03  4A 04 00 00 
 				0A 00 10  06 10 03  36 04 00 00
 				0B 0F 07  04 01 04  7C 04 00 00 80
-  554 * 7	 03 04 01 3C 00 03 00
-  555 * 42	 04 04 80 01 3C C5 "High Platform C with Roof B and LED" 00
-  556 * 43	 04 04 BA 01 3C C5 C3 9E 
+  549 * 7	 03 04 01 3C 00 03 00
+  550 * 42	 04 04 80 01 3C C5 "High Platform C with Roof B and LED" 00
+  551 * 43	 04 04 BA 01 3C C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  557 * 82	 00 04 02 01 3D 08 "KWS3" 09 02
+  552 * 82	 00 04 02 01 3D 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 
 				00 00 0E  10 06 03  35 04 00 00
@@ -3961,13 +3942,13 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 00 0E  06 10 03  36 04 00 00
 				02 0F 05  04 01 04  7C 04 00 00 80
-  558 * 7	 03 04 01 3D 00 03 00
-  559 * 41	 04 04 80 01 3D C5 "Low Platform A with Roof B and LED" 00
-  560 * 43	 04 04 BA 01 3D C5 C3 9E 
+  553 * 7	 03 04 01 3D 00 03 00
+  554 * 41	 04 04 80 01 3D C5 "Low Platform A with Roof B and LED" 00
+  555 * 43	 04 04 BA 01 3D C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  561 * 82	 00 04 02 01 3E 08 "KWS3" 09 02
+  556 * 82	 00 04 02 01 3E 08 "KWS3" 09 02
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00
@@ -3976,13 +3957,13 @@
 				0A 00 00  06 10 01  4C 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  562 * 7	 03 04 01 3E 00 03 00
-  563 * 41	 04 04 80 01 3E C5 "Low Platform B with Roof B and LED" 00
-  564 * 43	 04 04 BA 01 3E C5 C3 9E 
+  557 * 7	 03 04 01 3E 00 03 00
+  558 * 41	 04 04 80 01 3E C5 "Low Platform B with Roof B and LED" 00
+  559 * 43	 04 04 BA 01 3E C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  565 * 142	 00 04 02 01 3F 08 "KWS3" 09 02
+  560 * 142	 00 04 02 01 3F 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  2F 04 00 00 
 				00 00 0E  10 06 03  35 04 00 00
@@ -3997,13 +3978,13 @@
 				0A 00 00  06 10 01  4C 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  566 * 7	 03 04 01 3F 00 03 00
-  567 * 41	 04 04 80 01 3F C5 "Low Platform C with Roof B and LED" 00
-  568 * 43	 04 04 BA 01 3F C5 C3 9E 
+  561 * 7	 03 04 01 3F 00 03 00
+  562 * 41	 04 04 80 01 3F C5 "Low Platform C with Roof B and LED" 00
+  563 * 43	 04 04 BA 01 3F C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  569 * 82	 00 04 02 01 40 08 "KWS3" 09 02
+  564 * 82	 00 04 02 01 40 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00 
 				00 00 0E  10 06 03  35 04 00 00
@@ -4012,14 +3993,14 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 00 0E  06 10 03  36 04 00 00
 				02 0F 05  04 01 04  7C 04 00 00 80
-  570 * 7	 03 04 01 40 00 03 00
-  571 * 49	 04 04 80 01 40 C5 "Low Asphalt Platform A with Roof B and LED" 00
-  572 * 56	 04 04 BA 01 40 C5 C3 9E 
+  565 * 7	 03 04 01 40 00 03 00
+  566 * 49	 04 04 80 01 40 C5 "Low Asphalt Platform A with Roof B and LED" 00
+  567 * 56	 04 04 BA 01 40 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  573 * 82	 00 04 02 01 41 08 "KWS3" 09 02
+  568 * 82	 00 04 02 01 41 08 "KWS3" 09 02
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00
@@ -4028,14 +4009,14 @@
 				0A 00 00  06 10 01  4E 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  574 * 7	 03 04 01 41 00 03 00
-  575 * 49	 04 04 80 01 41 C5 "Low Asphalt Platform B with Roof B and LED" 00
-  576 * 56	 04 04 BA 01 41 C5 C3 9E 
+  569 * 7	 03 04 01 41 00 03 00
+  570 * 49	 04 04 80 01 41 C5 "Low Asphalt Platform B with Roof B and LED" 00
+  571 * 56	 04 04 BA 01 41 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  577 * 142	 00 04 02 01 42 08 "KWS3" 09 02
+  572 * 142	 00 04 02 01 42 08 "KWS3" 09 02
    				F4 03 00 00
 				00 00 00  10 06 01  31 04 00 00 
 				00 00 0E  10 06 03  35 04 00 00
@@ -4050,14 +4031,14 @@
 				0A 00 00  06 10 01  4E 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0B 0F 05  04 01 04  7C 04 00 00 80
-  578 * 7	 03 04 01 42 00 03 00
-  579 * 49	 04 04 80 01 42 C5 "Low Asphalt Platform C with Roof B and LED" 00
-  580 * 56	 04 04 BA 01 42 C5 C3 9E 
+  573 * 7	 03 04 01 42 00 03 00
+  574 * 49	 04 04 80 01 42 C5 "Low Asphalt Platform C with Roof B and LED" 00
+  575 * 56	 04 04 BA 01 42 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC A0 84 EA B4 91 ED 8C 90 00
 
-  581 * 82	 00 04 02 01 43 08 "KWS3" 09 02 
+  576 * 82	 00 04 02 01 43 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				06 0F 06  04 01 05  75 04 00 00
@@ -4066,13 +4047,13 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				0F 06 06  01 04 05  76 04 00 00 
 				0A 00 10  06 10 03  50 04 00 00 80
-  582 * 7	 03 04 01 43 00 03 00
-  583 * 45	 04 04 80 01 43 C5 "High Platform B with Roof A and Sign A" 00
-  584 * 45	 04 04 BA 01 43 C5 C3 9E 
+  577 * 7	 03 04 01 43 00 03 00
+  578 * 45	 04 04 80 01 43 C5 "High Platform B with Roof A and Sign A" 00
+  579 * 45	 04 04 BA 01 43 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  585 * 122	 00 04 02 01 44 08 "KWS3" 09 02 
+  580 * 122	 00 04 02 01 44 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 00 00  10 06 03  2D 04 00 00 
@@ -4085,13 +4066,13 @@
 				0F 06 06  01 04 05  76 04 00 00
 				0A 00 10  06 10 03  50 04 00 00
 				00 00 10  06 10 03  34 04 00 00 80
-  586 * 7	 03 04 01 44 00 03 00
-  587 * 45	 04 04 80 01 44 C5 "High Platform C with Roof A and Sign A" 00
-  588 * 45	 04 04 BA 01 44 C5 C3 9E 
+  581 * 7	 03 04 01 44 00 03 00
+  582 * 45	 04 04 80 01 44 C5 "High Platform C with Roof A and Sign A" 00
+  583 * 45	 04 04 BA 01 44 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  589 * 82	 00 04 02 01 45 08 "KWS3" 09 02 
+  584 * 82	 00 04 02 01 45 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  4B 04 00 00
 				06 0F 04  04 01 05  75 04 00 00
@@ -4100,13 +4081,13 @@
 				0A 00 00  06 10 03  4C 04 00 00
 				0F 06 04  01 04 05  76 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00 80
-  590 * 7	 03 04 01 45 00 03 00
-  591 * 44	 04 04 80 01 45 C5 "Low Platform B with Roof A and Sign A" 00
-  592 * 45	 04 04 BA 01 45 C5 C3 9E 
+  585 * 7	 03 04 01 45 00 03 00
+  586 * 44	 04 04 80 01 45 C5 "Low Platform B with Roof A and Sign A" 00
+  587 * 45	 04 04 BA 01 45 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  593 * 122	 00 04 02 01 46 08 "KWS3" 09 02 
+  588 * 122	 00 04 02 01 46 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				00 00 00  10 06 01  2F 04 00 00 
@@ -4119,13 +4100,13 @@
 				0F 06 04  01 04 05  76 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  594 * 7	 03 04 01 46 00 03 00
-  595 * 44	 04 04 80 01 46 C5 "Low Platform C with Roof A and Sign A" 00
-  596 * 45	 04 04 BA 01 46 C5 C3 9E 
+  589 * 7	 03 04 01 46 00 03 00
+  590 * 44	 04 04 80 01 46 C5 "Low Platform C with Roof A and Sign A" 00
+  591 * 45	 04 04 BA 01 46 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  597 * 82	 00 04 02 01 47 08 "KWS3" 09 02 
+  592 * 82	 00 04 02 01 47 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				06 0F 04  04 01 05  75 04 00 00
@@ -4134,14 +4115,14 @@
 				0A 00 00  06 10 01  4E 04 00 00
 				0F 06 04  01 04 05  76 04 00 00 
 				0A 00 0E  06 10 03  50 04 00 00 80
-  598 * 7	 03 04 01 47 00 03 00
-  599 * 52	 04 04 80 01 47 C5 "Low Asphalt Platform B with Roof A and Sign A" 00
-  600 * 58	 04 04 BA 01 47 C5 C3 9E 
+  593 * 7	 03 04 01 47 00 03 00
+  594 * 52	 04 04 80 01 47 C5 "Low Asphalt Platform B with Roof A and Sign A" 00
+  595 * 58	 04 04 BA 01 47 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  601 * 122	 00 04 02 01 48 08 "KWS3" 09 02 
+  596 * 122	 00 04 02 01 48 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 00 00  10 06 01  31 04 00 00
@@ -4154,14 +4135,14 @@
 				0F 06 04  01 04 05  76 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  602 * 7	 03 04 01 48 00 03 00
-  603 * 52	 04 04 80 01 48 C5 "Low Asphalt Platform C with Roof A and Sign A" 00
-  604 * 58	 04 04 BA 01 48 C5 C3 9E 
+  597 * 7	 03 04 01 48 00 03 00
+  598 * 52	 04 04 80 01 48 C5 "Low Asphalt Platform C with Roof A and Sign A" 00
+  599 * 58	 04 04 BA 01 48 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " A + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  605 * 82	 00 04 02 01 49 08 "KWS3" 09 02 
+  600 * 82	 00 04 02 01 49 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 0A 10  10 06 03  35 04 00 00
@@ -4170,13 +4151,13 @@
 				0A 00 00  06 10 03  4A 04 00 00 
 				0A 00 10  06 10 03  36 04 00 00
 				0F 06 07  01 04 05  76 04 00 00 80
-  606 * 7	 03 04 01 49 00 03 00
-  607 * 45	 04 04 80 01 49 C5 "High Platform B with Roof B and Sign A" 00
-  608 * 45	 04 04 BA 01 49 C5 C3 9E 
+  601 * 7	 03 04 01 49 00 03 00
+  602 * 45	 04 04 80 01 49 C5 "High Platform B with Roof B and Sign A" 00
+  603 * 45	 04 04 BA 01 49 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  609 * 122	 00 04 02 01 4A 08 "KWS3" 09 02 
+  604 * 122	 00 04 02 01 4A 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				00 00 00  10 06 03  2D 04 00 00 
@@ -4189,13 +4170,13 @@
 				0F 06 07  01 04 05  76 04 00 00
 				00 00 10  06 10 03  36 04 00 00
 				0A 00 10  06 10 03  36 04 00 00 80
-  610 * 7	 03 04 01 4A 00 03 00
-  611 * 45	 04 04 80 01 4A C5 "High Platform C with Roof B and Sign A" 00
-  612 * 45	 04 04 BA 01 4A C5 C3 9E 
+  605 * 7	 03 04 01 4A 00 03 00
+  606 * 45	 04 04 80 01 4A C5 "High Platform C with Roof B and Sign A" 00
+  607 * 45	 04 04 BA 01 4A C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  613 * 82	 00 04 02 01 4B 08 "KWS3" 09 02 
+  608 * 82	 00 04 02 01 4B 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 03  4B 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00
@@ -4204,13 +4185,13 @@
 				0A 00 00  06 10 03  4C 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0F 06 05  01 04 05  76 04 00 00 80
-  614 * 7	 03 04 01 4B 00 03 00
-  615 * 44	 04 04 80 01 4B C5 "Low Platform B with Roof B and Sign A" 00
-  616 * 45	 04 04 BA 01 4B C5 C3 9E 
+  609 * 7	 03 04 01 4B 00 03 00
+  610 * 44	 04 04 80 01 4B C5 "Low Platform B with Roof B and Sign A" 00
+  611 * 45	 04 04 BA 01 4B C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  617 * 122	 00 04 02 01 4C 08 "KWS3" 09 02 
+  612 * 122	 00 04 02 01 4C 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				00 00 00  10 06 01  2F 04 00 00 
@@ -4223,13 +4204,13 @@
 				0F 06 05  01 04 05  76 04 00 00
 				00 00 0E  06 10 03  36 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00 80
-  618 * 7	 03 04 01 4C 00 03 00
-  619 * 44	 04 04 80 01 4C C5 "Low Platform C with Roof B and Sign A" 00
-  620 * 45	 04 04 BA 01 4C C5 C3 9E 
+  613 * 7	 03 04 01 4C 00 03 00
+  614 * 44	 04 04 80 01 4C C5 "Low Platform C with Roof B and Sign A" 00
+  615 * 45	 04 04 BA 01 4C C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  621 * 82	 00 04 02 01 4D 08 "KWS3" 09 02 
+  616 * 82	 00 04 02 01 4D 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 0A 0E  10 06 03  35 04 00 00
@@ -4238,14 +4219,14 @@
 				0A 00 00  06 10 01  4E 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00
 				0F 06 05  01 04 05  76 04 00 00 80
-  622 * 7	 03 04 01 4D 00 03 00
-  623 * 52	 04 04 80 01 4D C5 "Low Asphalt Platform B with Roof B and Sign A" 00
-  624 * 58	 04 04 BA 01 4D C5 C3 9E 
+  617 * 7	 03 04 01 4D 00 03 00
+  618 * 52	 04 04 80 01 4D C5 "Low Asphalt Platform B with Roof B and Sign A" 00
+  619 * 58	 04 04 BA 01 4D C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  625 * 122	 00 04 02 01 4E 08 "KWS3" 09 02 
+  620 * 122	 00 04 02 01 4E 08 "KWS3" 09 02 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				00 00 00  10 06 01  31 04 00 00 
@@ -4258,14 +4239,14 @@
 				0F 06 05  01 04 05  76 04 00 00
 				00 00 0E  06 10 03  36 04 00 00 
 				0A 00 0E  06 10 03  36 04 00 00 80
-  626 * 7	 03 04 01 4E 00 03 00
-  627 * 52	 04 04 80 01 4E C5 "Low Asphalt Platform C with Roof B and Sign A" 00
-  628 * 58	 04 04 BA 01 4E C5 C3 9E 
+  621 * 7	 03 04 01 4E 00 03 00
+  622 * 52	 04 04 80 01 4E C5 "Low Asphalt Platform C with Roof B and Sign A" 00
+  623 * 58	 04 04 BA 01 4E C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " C + " EC A7 80 EB B6 95 " B + "
 				EC 97 AD EB AA 85 ED 8C 90 " A" 00
 
-  629 * 196	 00 04 04 01 50 08 "KWS3" 0B 02 0F 00 09 08
+  624 * 196	 00 04 04 01 50 08 "KWS3" 0B 02 0F 00 09 08
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				02 02 03  01 02 06  77 04 00 00 80 
@@ -4288,18 +4269,18 @@
 				00 00 00  10 06 03  2D 04 00 00 80 
 				F3 03 00 00
 				00 00 00  06 10 03  2E 04 00 00 80
-  630 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
-  631 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  632 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  633 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 4F 4F A1 00
-  634 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  635 * 10	 03 04 01 50 01 FF A4 00 A0 00
-  636 * 33	 04 04 80 01 50 C5 "High Platform A and Sign B" 00
-  637 * 34	 04 04 BA 01 50 C5 C3 9E 
+  625 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
+  626 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  627 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  628 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 4F 4F A1 00
+  629 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  630 * 10	 03 04 01 50 01 FF A4 00 A0 00
+  631 * 33	 04 04 80 01 50 C5 "High Platform A and Sign B" 00
+  632 * 34	 04 04 BA 01 50 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
-  638 * 316	 00 04 04 01 4F 08 "KWS3" 0B 02 0F 00 09 0C 
+  633 * 316	 00 04 04 01 4F 08 "KWS3" 0B 02 0F 00 09 0C 
    				F4 03 00 00 
 				00 0A 00  10 06 03  49 04 00 00
 				02 0C 03  01 02 06  77 04 00 00 80 
@@ -4337,20 +4318,20 @@
 				F3 03 00 00 
 				0A 00 00  06 10 03  4A 04 00 00 
 				0F 0D 03  02 01 06  78 04 00 00 80
-  639 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
-  640 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
-  641 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
-  642 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  643 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  644 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 50 50 A1 00
-  645 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  646 * 10	 03 04 01 4F 01 FF A6 00 A0 00
-  647 * 33	 04 04 80 01 4F C5 "High Platform B and Sign B" 00
-  648 * 34	 04 04 BA 01 4F C5 C3 9E 
+  634 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
+  635 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
+  636 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
+  637 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  638 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  639 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 50 50 A1 00
+  640 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  641 * 10	 03 04 01 4F 01 FF A6 00 A0 00
+  642 * 33	 04 04 80 01 4F C5 "High Platform B and Sign B" 00
+  643 * 34	 04 04 BA 01 4F C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
-  649 * 196	 00 04 04 01 51 08 "KWS3" 0B 02 0F 00 09 08
+  644 * 196	 00 04 04 01 51 08 "KWS3" 0B 02 0F 00 09 08
    				F4 03 00 00 
 				00 00 00  10 06 01  2F 04 00 00
 				02 02 01  01 02 06  77 04 00 00 80 
@@ -4373,18 +4354,18 @@
 				00 00 00  10 06 01  2F 04 00 00 80 
 				F3 03 00 00
 				00 00 00  06 10 01  30 04 00 00 80
-  650 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
-  651 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  652 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  653 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 52 52 A1 00
-  654 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  655 * 10	 03 04 01 51 01 FF A4 00 A0 00
-  656 * 32	 04 04 80 01 51 C5 "Low Platform A and Sign B" 00
-  657 * 34	 04 04 BA 01 51 C5 C3 9E 
+  645 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
+  646 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  647 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  648 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 52 52 A1 00
+  649 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  650 * 10	 03 04 01 51 01 FF A4 00 A0 00
+  651 * 32	 04 04 80 01 51 C5 "Low Platform A and Sign B" 00
+  652 * 34	 04 04 BA 01 51 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
-  658 * 316	 00 04 04 01 52 08 "KWS3" 0F 00 0B 02 09 0C 
+  653 * 316	 00 04 04 01 52 08 "KWS3" 0F 00 0B 02 09 0C 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4B 04 00 00
 				02 0C 01  01 02 06  77 04 00 00 80 
@@ -4422,20 +4403,20 @@
 				F3 03 00 00 
 				0A 00 00  06 10 01  4C 04 00 00 
 				0F 0D 01  02 01 06  78 04 00 00 80
-  659 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
-  660 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
-  661 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
-  662 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  663 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  664 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 51 51 A1 00
-  665 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  666 * 10	 03 04 01 52 01 FF A6 00 A0 00
-  667 * 32	 04 04 80 01 52 C5 "Low Platform B and Sign B" 00
-  668 * 34	 04 04 BA 01 52 C5 C3 9E 
+  654 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
+  655 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
+  656 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
+  657 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  658 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  659 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 51 51 A1 00
+  660 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  661 * 10	 03 04 01 52 01 FF A6 00 A0 00
+  662 * 32	 04 04 80 01 52 C5 "Low Platform B and Sign B" 00
+  663 * 34	 04 04 BA 01 52 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
-  669 * 196	 00 04 04 01 53 08 "KWS3" 0B 02 0F 00 09 08
+  664 * 196	 00 04 04 01 53 08 "KWS3" 0B 02 0F 00 09 08
    				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
 				02 02 01  01 02 06  77 04 00 00 80 
@@ -4458,19 +4439,19 @@
 				00 00 00  10 06 01  31 04 00 00 80 
 				F3 03 00 00
 				00 00 00  06 10 01  32 04 00 00 80
-  670 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
-  671 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  672 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  673 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 54 54 A1 00
-  674 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  675 * 10	 03 04 01 53 01 FF A4 00 A0 00
-  676 * 40	 04 04 80 01 53 C5 "Low Asphalt Platform A and Sign B" 00
-  677 * 47	 04 04 BA 01 53 C5 C3 9E 
+  665 * 14	 02 04 A4 81 0C 00 FF 01 02 80 14 14 03 00
+  666 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  667 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  668 * 15	 02 04 A3 81 68 F0 00 FF 01 06 80 54 54 A1 00
+  669 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  670 * 10	 03 04 01 53 01 FF A4 00 A0 00
+  671 * 40	 04 04 80 01 53 C5 "Low Asphalt Platform A and Sign B" 00
+  672 * 47	 04 04 BA 01 53 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
-  678 * 316	 00 04 04 01 54 08 "KWS3" 0F 00 0B 02 09 0C 
+  673 * 316	 00 04 04 01 54 08 "KWS3" 0F 00 0B 02 09 0C 
    				F4 03 00 00 
 				00 0A 00  10 06 01  4D 04 00 00
 				02 0C 01  01 02 06  77 04 00 00 80 
@@ -4508,22 +4489,22 @@
 				F3 03 00 00 
 				0A 00 00  06 10 01  4E 04 00 00 
 				0F 0D 01  02 01 06  78 04 00 00 80
-  679 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
-  680 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
-  681 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
-  682 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
-  683 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
-  684 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 53 53 A1 00
-  685 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
-  686 * 10	 03 04 01 54 01 FF A6 00 A0 00
-  687 * 40	 04 04 80 01 54 C5 "Low Asphalt Platform B and Sign B" 00
-  688 * 47	 04 04 BA 01 54 C5 C3 9E 
+  674 * 14	 02 04 A6 81 0C 00 FF 01 02 80 14 14 03 00
+  675 * 14	 02 04 A5 81 40 04 0F 01 0A 80 00 00 08 80
+  676 * 14	 02 04 A4 81 40 00 0F 01 06 80 00 00 A5 00
+  677 * 14	 02 04 A2 81 40 04 0F 01 04 80 00 00 02 80
+  678 * 14	 02 04 A1 81 40 00 0F 01 00 80 00 00 A2 00
+  679 * 15	 02 04 A3 81 68 10 00 FF 01 A4 00 53 53 A1 00
+  680 * 14	 02 04 A0 81 0C 00 FF 01 A3 00 14 14 03 00
+  681 * 10	 03 04 01 54 01 FF A6 00 A0 00
+  682 * 40	 04 04 80 01 54 C5 "Low Asphalt Platform B and Sign B" 00
+  683 * 47	 04 04 BA 01 54 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + " 
 				EC 97 AD EB AA 85 ED 8C 90 " B" 00
 
 //Waiting room
-  689 * 156	 00 04 04 01 55 08 "KWS3" 0F 00 0B 02 09 04
+  684 * 156	 00 04 04 01 55 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				05 00 03  06 03 05  7D 04 00 00
@@ -4540,16 +4521,16 @@
 				00 00 00  06 10 03  2E 04 00 00
 				00 05 03  03 06 05  82 04 00 00
 				00 05 03  03 06 05  84 44 22 03 80
-  690 * 14	 02 04 A2 81 0C 00 FF 01 00 80 14 14 03 00
-  691 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 56 56 00 80
-  692 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  693 * 10	 03 04 01 55 01 FF A2 00 A0 00
-  694 * 40	 04 04 80 01 55 C5 "High Platform A with Waiting room" 00
-  695 * 39	 04 04 BA 01 55 C5 C3 9E 
+  685 * 14	 02 04 A2 81 0C 00 FF 01 00 80 14 14 03 00
+  686 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 56 56 00 80
+  687 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  688 * 10	 03 04 01 55 01 FF A2 00 A0 00
+  689 * 40	 04 04 80 01 55 C5 "High Platform A with Waiting room" 00
+  690 * 39	 04 04 BA 01 55 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	00
 
-  696 * 156	 00 04 04 01 56 08 "KWS3" 0F 00 0B 02 09 04 
+  691 * 156	 00 04 04 01 56 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				05 0D 03  06 03 05  7D 04 00 00
@@ -4566,15 +4547,15 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				0D 05 03  03 06 05  86 04 00 00
 				0D 05 03  03 06 05  88 44 22 03 80
-  697 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 55 55 00 80
-  698 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  699 * 10	 03 04 01 56 01 FF A2 00 A0 00
-  700 * 40	 04 04 80 01 56 C5 "High Platform B with Waiting room" 00
-  701 * 39	 04 04 BA 01 56 C5 C3 9E 
+  692 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 55 55 00 80
+  693 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  694 * 10	 03 04 01 56 01 FF A2 00 A0 00
+  695 * 40	 04 04 80 01 56 C5 "High Platform B with Waiting room" 00
+  696 * 39	 04 04 BA 01 56 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4 00
 
-  702 * 156	 00 04 04 01 1A 08 "KWS3" 0F 00 0B 02 09 04
+  697 * 156	 00 04 04 01 1A 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 01  2F 04 00 00
 				05 00 01  06 03 05  7D 04 00 00
@@ -4591,15 +4572,15 @@
 				00 00 00  06 10 01  30 04 00 00
 				00 05 01  03 06 05  82 04 00 00
 				00 05 01  03 06 05  84 44 22 03 80
-  703 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 1B 1B 00 80
-  704 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  705 * 10	 03 04 01 1A 01 FF A2 00 A0 00
-  706 * 39	 04 04 80 01 1A C5 "Low Platform A with Waiting room" 00
-  707 * 39	 04 04 BA 01 1A C5 C3 9E 
+  698 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 1B 1B 00 80
+  699 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  700 * 10	 03 04 01 1A 01 FF A2 00 A0 00
+  701 * 39	 04 04 80 01 1A C5 "Low Platform A with Waiting room" 00
+  702 * 39	 04 04 BA 01 1A C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	00
 
-  708 * 156	 00 04 04 01 1B 08 "KWS3" 0F 00 0B 02 09 04 
+  703 * 156	 00 04 04 01 1B 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
 				05 0D 01  06 03 05  7D 04 00 00
@@ -4616,15 +4597,15 @@
 				0A 00 00  06 10 01  4C 04 00 00
 				0D 05 01  03 06 05  86 04 00 00
 				0D 05 01  03 06 05  88 44 22 03 80
-  709 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 1A 1A 00 80
-  710 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  711 * 10	 03 04 01 1B 01 FF A2 00 A0 00
-  712 * 39	 04 04 80 01 1B C5 "Low Platform B with Waiting room" 00
-  713 * 39	 04 04 BA 01 1B C5 C3 9E 
+  704 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 1A 1A 00 80
+  705 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  706 * 10	 03 04 01 1B 01 FF A2 00 A0 00
+  707 * 39	 04 04 80 01 1B C5 "Low Platform B with Waiting room" 00
+  708 * 39	 04 04 BA 01 1B C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4 00
 
-  714 * 156	 00 04 04 01 6B 08 "KWS3" 0F 00 0B 02 09 04
+  709 * 156	 00 04 04 01 6B 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
 				05 00 01  06 03 05  7D 04 00 00
@@ -4641,16 +4622,16 @@
 				00 00 00  06 10 01  32 04 00 00
 				00 05 01  03 06 05  82 04 00 00
 				00 05 01  03 06 05  84 44 22 03 80
-  715 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 6C 6C 00 80
-  716 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  717 * 10	 03 04 01 6B 01 FF A2 00 A0 00
-  718 * 47	 04 04 80 01 6B C5 "Low Asphalt Platform A with Waiting room" 00
-  719 * 52	 04 04 BA 01 6B C5 C3 9E 
+  710 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 6C 6C 00 80
+  711 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  712 * 10	 03 04 01 6B 01 FF A2 00 A0 00
+  713 * 47	 04 04 80 01 6B C5 "Low Asphalt Platform A with Waiting room" 00
+  714 * 52	 04 04 BA 01 6B C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	00
 
-  720 * 156	 00 04 04 01 6C 08 "KWS3" 0F 00 0B 02 09 04 
+  715 * 156	 00 04 04 01 6C 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
 				05 0D 01  06 03 05  7D 04 00 00
@@ -4667,16 +4648,16 @@
 				0A 00 00  06 10 01  4E 04 00 00
 				0D 05 01  03 06 05  86 04 00 00
 				0D 05 01  03 06 05  88 44 22 03 80
-  721 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 55 55 00 80
-  722 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  723 * 10	 03 04 01 6C 01 FF A2 00 A0 00
-  724 * 47	 04 04 80 01 6C C5 "Low Asphalt Platform B with Waiting room" 00
-  725 * 52	 04 04 BA 01 6C C5 C3 9E 
+  716 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 55 55 00 80
+  717 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  718 * 10	 03 04 01 6C 01 FF A2 00 A0 00
+  719 * 47	 04 04 80 01 6C C5 "Low Asphalt Platform B with Waiting room" 00
+  720 * 52	 04 04 BA 01 6C C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4 00
 
-  726 * 196	 00 04 04 01 6D 08 "KWS3" 0F 00 0B 02 09 04
+  721 * 196	 00 04 04 01 6D 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				05 00 03  06 03 05  7D 04 00 00
@@ -4697,16 +4678,16 @@
 				00 05 03  03 06 05  82 04 00 00
 				00 05 03  03 06 05  84 44 22 03
 				00 00 10  06 10 03  34 04 00 00 80
-  727 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 6E 6E 00 80
-  728 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  729 * 10	 03 04 01 6D 01 FF A2 00 A0 00
-  730 * 49	 04 04 80 01 6D C5 "High Platform A with Waiting room and Roof" 00
-  731 * 48	 04 04 BA 01 6D C5 C3 9E 
+  722 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 6E 6E 00 80
+  723 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  724 * 10	 03 04 01 6D 01 FF A2 00 A0 00
+  725 * 49	 04 04 80 01 6D C5 "High Platform A with Waiting room and Roof" 00
+  726 * 48	 04 04 BA 01 6D C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95 00
 
-  732 * 196	 00 04 04 01 6E 08 "KWS3" 0F 00 0B 02 09 04 
+  727 * 196	 00 04 04 01 6E 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				05 0D 03  06 03 05  7D 04 00 00
@@ -4727,16 +4708,16 @@
 				0A 00 10  06 10 03  50 04 00 00
 				0D 05 03  03 06 05  86 04 00 00
 				0D 05 03  03 06 05  88 44 22 03 80
-  733 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 6D 6D 00 80
-  734 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  735 * 10	 03 04 01 6E 01 FF A2 00 A0 00
-  736 * 49	 04 04 80 01 6E C5 "High Platform B with Waiting room and Roof" 00
-  737 * 48	 04 04 BA 01 6E C5 C3 9E 
+  728 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 6D 6D 00 80
+  729 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  730 * 10	 03 04 01 6E 01 FF A2 00 A0 00
+  731 * 49	 04 04 80 01 6E C5 "High Platform B with Waiting room and Roof" 00
+  732 * 48	 04 04 BA 01 6E C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95 00
 
-  738 * 196	 00 04 04 01 6F 08 "KWS3" 0F 00 0B 02 09 04
+  733 * 196	 00 04 04 01 6F 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 01  2F 04 00 00
 				05 00 01  06 03 05  7D 04 00 00
@@ -4757,16 +4738,16 @@
 				00 00 0E  06 10 03  34 04 00 00
 				00 05 01  03 06 05  82 04 00 00
 				00 05 01  03 06 05  84 44 22 03 80
-  739 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 70 70 00 80
-  740 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  741 * 10	 03 04 01 6F 01 FF A2 00 A0 00
-  742 * 48	 04 04 80 01 6F C5 "Low Platform A with Waiting room and Roof" 00
-  743 * 48	 04 04 BA 01 6F C5 C3 9E 
+  734 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 70 70 00 80
+  735 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  736 * 10	 03 04 01 6F 01 FF A2 00 A0 00
+  737 * 48	 04 04 80 01 6F C5 "Low Platform A with Waiting room and Roof" 00
+  738 * 48	 04 04 BA 01 6F C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95	00
 
-  744 * 196	 00 04 04 01 70 08 "KWS3" 0F 00 0B 02 09 04 
+  739 * 196	 00 04 04 01 70 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4B 04 00 00
 				05 0D 01  06 03 05  7D 04 00 00
@@ -4787,16 +4768,16 @@
 				0A 00 0E  06 10 03  50 04 00 00
 				0D 05 01  03 06 05  86 04 00 00
 				0D 05 01  03 06 05  88 44 22 03 80
-  745 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 6F 6F 00 80
-  746 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  747 * 10	 03 04 01 70 01 FF A2 00 A0 00
-  748 * 48	 04 04 80 01 70 C5 "Low Platform B with Waiting room and Roof" 00
-  749 * 48	 04 04 BA 01 70 C5 C3 9E 
+  740 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 6F 6F 00 80
+  741 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  742 * 10	 03 04 01 70 01 FF A2 00 A0 00
+  743 * 48	 04 04 80 01 70 C5 "Low Platform B with Waiting room and Roof" 00
+  744 * 48	 04 04 BA 01 70 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95 00
 
-  750 * 196	 00 04 04 01 71 08 "KWS3" 0F 00 0B 02 09 04
+  745 * 196	 00 04 04 01 71 08 "KWS3" 0F 00 0B 02 09 04
    				F4 03 00 00 
 				00 00 00  10 06 01  31 04 00 00
 				05 00 01  06 03 05  7D 04 00 00
@@ -4817,17 +4798,17 @@
 				00 00 0E  06 10 03  34 04 00 00
 				00 05 01  03 06 05  82 04 00 00
 				00 05 01  03 06 05  84 44 22 03 80
-  751 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 72 72 00 80
-  752 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  753 * 10	 03 04 01 71 01 FF A2 00 A0 00
-  754 * 56	 04 04 80 01 71 C5 "Low Asphalt Platform A with Waiting room and Roof" 00
-  755 * 61	 04 04 BA 01 71 C5 C3 9E 
+  746 * 15	 02 04 A1 81 68 F0 00 FF 01 02 80 72 72 00 80
+  747 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  748 * 10	 03 04 01 71 01 FF A2 00 A0 00
+  749 * 56	 04 04 80 01 71 C5 "Low Asphalt Platform A with Waiting room and Roof" 00
+  750 * 61	 04 04 BA 01 71 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " A + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95	00
 
-  756 * 196	 00 04 04 01 72 08 "KWS3" 0F 00 0B 02 09 04 
+  751 * 196	 00 04 04 01 72 08 "KWS3" 0F 00 0B 02 09 04 
 				F4 03 00 00
 				00 0A 00  10 06 01  4D 04 00 00
 				05 0D 01  06 03 05  7D 04 00 00
@@ -4848,18 +4829,18 @@
 				0A 00 0E  06 10 03  50 04 00 00
 				0D 05 01  03 06 05  86 04 00 00
 				0D 05 01  03 06 05  88 44 22 03 80
-  757 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 71 71 00 80
-  758 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  759 * 10	 03 04 01 72 01 FF A2 00 A0 00
-  760 * 56	 04 04 80 01 72 C5 "Low Asphalt Platform B with Waiting room and Roof" 00
-  761 * 61	 04 04 BA 01 72 C5 C3 9E 
+  752 * 15	 02 04 A1 81 68 10 00 FF 01 02 80 71 71 00 80
+  753 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  754 * 10	 03 04 01 72 01 FF A2 00 A0 00
+  755 * 56	 04 04 80 01 72 C5 "Low Asphalt Platform B with Waiting room and Roof" 00
+  756 * 61	 04 04 BA 01 72 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20
 				EC A0 80 EC 83 81 ED 99 88 " B + "
 				EA B3 A0 EA B0 9D 20 EB 8C 80 EA B8 B0 EC 8B A4	" + "
 				EC A7 80 EB B6 95 00
 
 //Platforms with Crossing
-  762 * 166	 00 04 04 01 18 08 "KWS0" 0B 02 0F 00 09 06
+  757 * 166	 00 04 04 01 18 08 "KWS0" 0B 02 0F 00 09 06
 				F4 03 00 00
 				00 00 00  10 06 01  39 04 00 00
 				07 06 00  02 0A 00  3F 04 00 00 80 
@@ -4877,16 +4858,16 @@
 				00 06 00  02 0A 00  43 04 00 00 80 
 				F3 03 00 00
 				00 00 00 06 10 01 3E 04 00 00 06 00 00 0A 02 00 44 04 00 00 80
-  763 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
-  764 * 14	 02 04 A2 81 40 04 0F 01 02 80 00 00 00 80
-  765 * 14	 02 04 A1 81 40 00 0F 01 04 80 00 00 A2 00
-  766 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  767 * 10	 03 04 01 18 01 FF A3 00 A0 00
-  768 * 35	 04 04 80 01 18 C5 "Low Platform A with Crossing" 00
-  769 * 32	 04 04 BA 01 18 C5 C3 9E 
+  758 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
+  759 * 14	 02 04 A2 81 40 04 0F 01 02 80 00 00 00 80
+  760 * 14	 02 04 A1 81 40 00 0F 01 04 80 00 00 A2 00
+  761 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  762 * 10	 03 04 01 18 01 FF A3 00 A0 00
+  763 * 35	 04 04 80 01 18 C5 "Low Platform A with Crossing" 00
+  764 * 32	 04 04 BA 01 18 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EA B1 B4 EB 84 90 EB AA A9 00
 
-  770 * 166	 00 04 04 01 19 08 "KWS0" 0B 02 0F 00 09 06
+  765 * 166	 00 04 04 01 19 08 "KWS0" 0B 02 0F 00 09 06
 				F4 03 00 00
 				00 0A 00  10 06 01  55 04 00 00 
 				07 00 00  02 0A 00  5B 04 00 00 80 
@@ -4905,16 +4886,16 @@
 				F3 03 00 00
 				0A 00 00  06 10 01  5A 04 00 00 
 				00 00 00  0A 02 00 60 04 00 00 80
-  771 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
-  772 * 14	 02 04 A2 81 40 04 0F 01 02 80 00 00 00 80
-  773 * 14	 02 04 A1 81 40 00 0F 01 04 80 00 00 A2 00
-  774 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  775 * 10	 03 04 01 19 01 FF A3 00 A0 00
-  776 * 35	 04 04 80 01 19 C5 "Low Platform B with Crossing" 00
-  777 * 32	 04 04 BA 01 19 C5 C3 9E 
+  766 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
+  767 * 14	 02 04 A2 81 40 04 0F 01 02 80 00 00 00 80
+  768 * 14	 02 04 A1 81 40 00 0F 01 04 80 00 00 A2 00
+  769 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  770 * 10	 03 04 01 19 01 FF A3 00 A0 00
+  771 * 35	 04 04 80 01 19 C5 "Low Platform B with Crossing" 00
+  772 * 32	 04 04 BA 01 19 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EA B1 B4 EB 84 90 EB AA A9 00
 
-  778 * 436	 00 04 04 01 1C 08 "KWS0" 0B 02 0F 00 09 0C
+  773 * 436	 00 04 04 01 1C 08 "KWS0" 0B 02 0F 00 09 0C
 				F4 03 00 00 
 				00 00 00  10 06 01  39 04 00 00
 				07 06 00  02 0A 00  3F 04 00 00
@@ -4963,20 +4944,20 @@
 				00 00 00  06 10 01  3E 04 00 00
 				06 00 00  0A 02 00  44 04 00 00
 				00 00 0E  06 10 03  36 04 00 00 80
-  779 * 15	 02 04 A6 81 68 01 00 FF 01 0A 80 0E 0E 04 80
-  780 * 15	 02 04 A5 81 68 0F 00 FF 01 08 80 0E 0E 02 80
-  781 * 15	 02 04 A4 81 68 0F 00 FF 01 06 80 0E 0E 00 80
-  782 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
-  783 * 14	 02 04 A2 81 40 04 0F 01 A5 00 00 00 A4 00
-  784 * 14	 02 04 A1 81 40 00 0F 01 A6 00 00 00 A2 00
-  785 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  786 * 10	 03 04 01 1C 01 FF A3 00 A0 00
-  787 * 44	 04 04 80 01 1C C5 "Low Platform A with Roof and Crossing" 00
-  788 * 41	 04 04 BA 01 1C C5 C3 9E 
+  774 * 15	 02 04 A6 81 68 01 00 FF 01 0A 80 0E 0E 04 80
+  775 * 15	 02 04 A5 81 68 0F 00 FF 01 08 80 0E 0E 02 80
+  776 * 15	 02 04 A4 81 68 0F 00 FF 01 06 80 0E 0E 00 80
+  777 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
+  778 * 14	 02 04 A2 81 40 04 0F 01 A5 00 00 00 A4 00
+  779 * 14	 02 04 A1 81 40 00 0F 01 A6 00 00 00 A2 00
+  780 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  781 * 10	 03 04 01 1C 01 FF A3 00 A0 00
+  782 * 44	 04 04 80 01 1C C5 "Low Platform A with Roof and Crossing" 00
+  783 * 41	 04 04 BA 01 1C C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " A + " EC A7 80 EB B6 95 " + "
 				EA B1 B4 EB 84 90 EB AA A9 00
 
-  789 * 436	 00 04 04 01 1D 08 "KWS0" 0B 02 0F 00 09 0C
+  784 * 436	 00 04 04 01 1D 08 "KWS0" 0B 02 0F 00 09 0C
 				F4 03 00 00
 				00 0A 00  10 06 01  55 04 00 00
 				07 00 00  02 0A 00  5B 04 00 00
@@ -5025,72 +5006,72 @@
 				0A 00 00  06 10 01  5A 04 00 00
 				00 00 00  0A 02 00  60 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00 80
-  790 * 15	 02 04 A6 81 68 01 00 FF 01 0A 80 0F 0F 04 80
-  791 * 15	 02 04 A5 81 68 0F 00 FF 01 08 80 0F 0F 02 80
-  792 * 15	 02 04 A4 81 68 0F 00 FF 01 06 80 0F 0F 00 80
-  793 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
-  794 * 14	 02 04 A2 81 40 04 0F 01 A5 00 00 00 A4 00
-  795 * 14	 02 04 A1 81 40 00 0F 01 A6 00 00 00 A2 00
-  796 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  797 * 10	 03 04 01 1D 01 FF A3 00 A0 00
-  798 * 44	 04 04 80 01 1D C5 "Low Platform B with Roof and Crossing" 00
-  799 * 41	 04 04 BA 01 1D C5 C3 9E 
+  785 * 15	 02 04 A6 81 68 01 00 FF 01 0A 80 0F 0F 04 80
+  786 * 15	 02 04 A5 81 68 0F 00 FF 01 08 80 0F 0F 02 80
+  787 * 15	 02 04 A4 81 68 0F 00 FF 01 06 80 0F 0F 00 80
+  788 * 14	 02 04 A3 81 0C 00 FF 01 00 80 14 14 03 00
+  789 * 14	 02 04 A2 81 40 04 0F 01 A5 00 00 00 A4 00
+  790 * 14	 02 04 A1 81 40 00 0F 01 A6 00 00 00 A2 00
+  791 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  792 * 10	 03 04 01 1D 01 FF A3 00 A0 00
+  793 * 44	 04 04 80 01 1D C5 "Low Platform B with Roof and Crossing" 00
+  794 * 41	 04 04 BA 01 1D C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " B + " EC A7 80 EB B6 95 " + "
 				EA B1 B4 EB 84 90 EB AA A9 00
 
-  800 * 46	 00 04 04 01 73 08 "KWS0" 0B 02 0F 00 09 02
+  795 * 46	 00 04 04 01 73 08 "KWS0" 0B 02 0F 00 09 02
 				F4 03 00 00
 				07 00 00  02 10 00  A9 04 00 00 80 
 				F3 03 00 00
 				00 07 00  10 02 00  AA 04 00 00 80
-  801 * 7	 03 04 01 73 00 03 00
-  802 * 31	 04 04 80 01 73 C5 "Non-Platform Crossings A" 00
-  803 * 37	 04 04 BA 01 73 C5 C3 9E 
+  796 * 7	 03 04 01 73 00 03 00
+  797 * 31	 04 04 80 01 73 C5 "Non-Platform Crossings A" 00
+  798 * 37	 04 04 BA 01 73 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 20 EC 97 86 EB 8A 94 20 EA B1 B4 EB 84 90 EB AA A9 " A" 00
 
-  804 * 46	 00 04 04 01 74 08 "KWS0" 0B 02 0F 00 09 02
+  799 * 46	 00 04 04 01 74 08 "KWS0" 0B 02 0F 00 09 02
 				F4 03 00 00
 				00 00 00  02 10 00  AB 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 02 00  AC 04 00 00 80
-  805 * 7	 03 04 01 74 00 03 00
-  806 * 31	 04 04 80 01 74 C5 "Non-Platform Crossings B" 00
-  807 * 37	 04 04 BA 01 74 C5 C3 9E 
+  800 * 7	 03 04 01 74 00 03 00
+  801 * 31	 04 04 80 01 74 C5 "Non-Platform Crossings B" 00
+  802 * 37	 04 04 BA 01 74 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 20 EC 97 86 EB 8A 94 20 EA B1 B4 EB 84 90 EB AA A9 " B" 00
 
-  808 * 46	 00 04 04 01 75 08 "KWS0" 0B 02 0F 00 09 02
+  803 * 46	 00 04 04 01 75 08 "KWS0" 0B 02 0F 00 09 02
 				F4 03 00 00
 				0E 00 00  02 10 00  AD 04 00 00 80 
 				F3 03 00 00
 				00 0E 00  10 02 00  AE 04 00 00 80
-  809 * 7	 03 04 01 75 00 03 00
-  810 * 31	 04 04 80 01 75 C5 "Non-Platform Crossings C" 00
-  811 * 37	 04 04 BA 01 75 C5 C3 9E 
+  804 * 7	 03 04 01 75 00 03 00
+  805 * 31	 04 04 80 01 75 C5 "Non-Platform Crossings C" 00
+  806 * 37	 04 04 BA 01 75 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 20 EC 97 86 EB 8A 94 20 EA B1 B4 EB 84 90 EB AA A9 " C" 00
 
-  812 * 42	 00 04 02 01 76 08 "WAYP" 09 02
+  807 * 42	 00 04 02 01 76 08 "WAYP" 09 02
 				F4 03 00 00
 				07 00 00  02 10 00  A9 04 00 00 80 
 				F3 03 00 00
 				00 07 00  10 02 00  A4 04 00 00 80
-  813 * 7	 03 04 01 76 00 03 00
+  808 * 7	 03 04 01 76 00 03 00
 
-  814 * 42	 00 04 02 01 77 08 "WAYP" 09 02
+  809 * 42	 00 04 02 01 77 08 "WAYP" 09 02
 				F4 03 00 00
 				00 00 00  02 10 00  AB 04 00 00 80 
 				F3 03 00 00
 				00 00 00  10 02 00  AC 04 00 00 80
-  815 * 7	 03 04 01 77 00 03 00
+  810 * 7	 03 04 01 77 00 03 00
 
-  816 * 42	 00 04 02 01 78 08 "WAYP" 09 02
+  811 * 42	 00 04 02 01 78 08 "WAYP" 09 02
 				F4 03 00 00
 				0E 00 00  02 10 00  AD 04 00 00 80 
 				F3 03 00 00
 				00 0E 00  10 02 00  AE 04 00 00 80
-  817 * 7	 03 04 01 78 00 03 00
+  812 * 7	 03 04 01 78 00 03 00
 
 //Platform junction
-  818 * 436	 00 04 04 01 59 08 "KWS4" 0B 02 0F 00 09 0C
+  813 * 436	 00 04 04 01 59 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 24 83
 				00 00 80  00 00 00  F0 03 00 80
@@ -5140,21 +5121,21 @@
 				00 00 80  00 00 00  EE 43 23 83
 				00 00 80  00 00 00  F0 03 00 80
 				00 00 00  06 10 03  32 04 00 00 80
-  819 * 6	 07 00 01 02 00 03
-  820 * 14	 02 04 A7 81 44 00 01 01 0A 80 01 01 04 80
-  821 * 14	 02 04 A6 81 44 00 01 01 08 80 01 01 02 80
-  822 * 14	 02 04 A5 81 44 00 01 01 06 80 01 01 00 80
-  823 * 6	 07 00 01 03 00 03
+  814 * 6	 07 00 01 02 00 03
+  815 * 14	 02 04 A7 81 44 00 01 01 0A 80 01 01 04 80
+  816 * 14	 02 04 A6 81 44 00 01 01 08 80 01 01 02 80
+  817 * 14	 02 04 A5 81 44 00 01 01 06 80 01 01 00 80
+  818 * 6	 07 00 01 03 00 03
 //!!Warning (100): Default ID appears earlier in sprite.
-//!!Warning (94): Redefining ID A7 not used since previous definition at sprite 820.
-  824 * 14	 02 04 A7 81 44 00 01 01 04 80 01 01 04 80
+//!!Warning (94): Redefining ID A7 not used since previous definition at sprite 815.
+  819 * 14	 02 04 A7 81 44 00 01 01 04 80 01 01 04 80
 //!!Warning (100): Default ID appears earlier in sprite.
-//!!Warning (94): Redefining ID A6 not used since previous definition at sprite 821.
-  825 * 14	 02 04 A6 81 44 00 01 01 02 80 01 01 02 80
+//!!Warning (94): Redefining ID A6 not used since previous definition at sprite 816.
+  820 * 14	 02 04 A6 81 44 00 01 01 02 80 01 01 02 80
 //!!Warning (100): Default ID appears earlier in sprite.
-//!!Warning (94): Redefining ID A5 not used since previous definition at sprite 822.
-  826 * 14	 02 04 A5 81 44 00 01 01 00 80 01 01 00 80
-  827 * 127	 02 04 A4 81 68 0E 00 FF 1D
+//!!Warning (94): Redefining ID A5 not used since previous definition at sprite 817.
+  821 * 14	 02 04 A5 81 44 00 01 01 00 80 01 01 00 80
+  822 * 127	 02 04 A4 81 68 0E 00 FF 1D
 				A6 00 02 03  A6 00 21 21 A6 00 08 09  A6 00 24 24
 				A6 00 0E 0F  A6 00 27 27 A6 00 14 15  A6 00 2B 2C
 				A6 00 34 35  A6 00 36 36 A6 00 3D 3F  A6 00 45 46
@@ -5163,7 +5144,7 @@
 				A7 00 10 11  A7 00 28 28 A7 00 16 17  A7 00 2D 2E 
 				A7 00 37 39  A7 00 40 42 A7 00 47 48  A7 00 4D 4E
 				A7 00 53 54  A5 00
-  828 * 127	 02 04 A3 81 68 0F 00 FF 1D
+  823 * 127	 02 04 A3 81 68 0F 00 FF 1D
 				A6 00 02 03  A6 00 21 21 A6 00 08 09  A6 00 24 24
 				A6 00 0E 0F  A6 00 27 27 A6 00 14 15  A6 00 2B 2C
 				A6 00 34 35  A6 00 36 36 A6 00 3D 3F  A6 00 45 46
@@ -5172,7 +5153,7 @@
 				A7 00 10 11  A7 00 28 28 A7 00 16 17  A7 00 2D 2E 
 				A7 00 37 39  A7 00 40 42 A7 00 47 48  A7 00 4D 4E
 				A7 00 53 54  A4 00
-  829 * 127	 02 04 A2 81 68 02 00 FF 1D
+  824 * 127	 02 04 A2 81 68 02 00 FF 1D
 				A6 00 02 03  A6 00 21 21 A6 00 08 09  A6 00 24 24
 				A6 00 0E 0F  A6 00 27 27 A6 00 14 15  A6 00 2B 2C
 				A6 00 34 35  A6 00 36 36 A6 00 3D 3F  A6 00 45 46
@@ -5181,7 +5162,7 @@
 				A7 00 10 11  A7 00 28 28 A7 00 16 17  A7 00 2D 2E 
 				A7 00 37 39  A7 00 40 42 A7 00 47 48  A7 00 4D 4E
 				A7 00 53 54  A3 00
-  830 * 127	 02 04 A1 81 68 01 00 FF 1D
+  825 * 127	 02 04 A1 81 68 01 00 FF 1D
 				A6 00 02 03  A6 00 21 21 A6 00 08 09  A6 00 24 24
 				A6 00 0E 0F  A6 00 27 27 A6 00 14 15  A6 00 2B 2C
 				A6 00 34 35  A6 00 36 36 A6 00 3D 3F  A6 00 45 46
@@ -5190,17 +5171,17 @@
 				A7 00 10 11  A7 00 28 28 A7 00 16 17  A7 00 2D 2E 
 				A7 00 37 39  A7 00 40 42 A7 00 47 48  A7 00 4D 4E
 				A7 00 53 54  A2 00
-  831 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
-  832 * 7	 03 04 01 59 00 A0 00
-  833 * 22	 04 04 80 01 59 C4 "[KWS] " "Junctions" 00
-  834 * 21	 04 04 BA 01 59 C4 C3 9E 
+  826 * 14	 02 04 A0 81 0C 00 FF 01 A1 00 14 14 03 00
+  827 * 7	 03 04 01 59 00 A0 00
+  828 * 22	 04 04 80 01 59 C4 "[KWS] " "Junctions" 00
+  829 * 21	 04 04 BA 01 59 C4 C3 9E 
 				"[KWS] " EB B6 84 EA B8 B0 00
-  835 * 28	 04 04 80 01 59 C5 "Platform A + Southern" 00
-  836 * 36	 04 04 BA 01 59 C5 C3 9E 
+  830 * 28	 04 04 80 01 59 C5 "Platform A + Southern" 00
+  831 * 36	 04 04 BA 01 59 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  837 * 436	 00 04 04 01 5A 08 "KWS4" 0B 02 0F 00 09 0C
+  832 * 436	 00 04 04 01 5A 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F2 03 00 80
@@ -5250,13 +5231,13 @@
 				00 00 80  00 00 00  EE 43 23 83
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00 80
-  838 * 7	 03 04 01 5A 00 A0 00
-  839 * 28	 04 04 80 01 5A C5 "Platform B + Southern" 00
-  840 * 36	 04 04 BA 01 5A C5 C3 9E 
+  833 * 7	 03 04 01 5A 00 A0 00
+  834 * 28	 04 04 80 01 5A C5 "Platform B + Southern" 00
+  835 * 36	 04 04 BA 01 5A C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  841 * 436	 00 04 04 01 5B 08 "KWS4" 0B 02 0F 00 09 0C 
+  836 * 436	 00 04 04 01 5B 08 "KWS4" 0B 02 0F 00 09 0C 
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F1 03 00 80
@@ -5306,13 +5287,13 @@
 				00 00 80  00 00 00  EE 43 23 83
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00 80
-  842 * 7	 03 04 01 5B 00 A0 00
-  843 * 28	 04 04 80 01 5B C5 "Platform A + Northern" 00
-  844 * 36	 04 04 BA 01 5B C5 C3 9E 
+  837 * 7	 03 04 01 5B 00 A0 00
+  838 * 28	 04 04 80 01 5B C5 "Platform A + Northern" 00
+  839 * 36	 04 04 BA 01 5B C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  845 * 436	 00 04 04 01 5C 08 "KWS4" 0B 02 0F 00 09 0C 
+  840 * 436	 00 04 04 01 5C 08 "KWS4" 0B 02 0F 00 09 0C 
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -5362,13 +5343,13 @@
 				00 00 80  00 00 00  EE 43 23 83
 				00 00 80  00 00 00  EF 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00 80
-  846 * 7	 03 04 01 5C 00 A0 00
-  847 * 28	 04 04 80 01 5C C5 "Platform B + Northern" 00
-  848 * 36	 04 04 BA 01 5C C5 C3 9E 
+  841 * 7	 03 04 01 5C 00 A0 00
+  842 * 28	 04 04 80 01 5C C5 "Platform B + Northern" 00
+  843 * 36	 04 04 BA 01 5C C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  849 * 556	 00 04 04 01 5D 08 "KWS4" 0B 02 0F 00 09 0C 
+  844 * 556	 00 04 04 01 5D 08 "KWS4" 0B 02 0F 00 09 0C 
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F0 03 00 80
@@ -5430,13 +5411,13 @@
 				00 00 80  00 00 00  F0 03 00 80
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00 80
-  850 * 7	 03 04 01 5D 00 A0 00
-  851 * 24	 04 04 80 01 5D C5 "Platform A + Both" 00
-  852 * 36	 04 04 BA 01 5D C5 C3 9E 
+  845 * 7	 03 04 01 5D 00 A0 00
+  846 * 24	 04 04 80 01 5D C5 "Platform A + Both" 00
+  847 * 36	 04 04 BA 01 5D C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  853 * 556	 00 04 04 01 5E 08 "KWS4" 0B 02 0F 00 09 0C 
+  848 * 556	 00 04 04 01 5E 08 "KWS4" 0B 02 0F 00 09 0C 
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -5498,13 +5479,13 @@
 				00 00 80  00 00 00  EF 03 00 80
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00 80
-  854 * 7	 03 04 01 5E 00 A0 00
-  855 * 24	 04 04 80 01 5E C5 "Platform B + Both" 00
-  856 * 36	 04 04 BA 01 5E C5 C3 9E 
+  849 * 7	 03 04 01 5E 00 A0 00
+  850 * 24	 04 04 80 01 5E C5 "Platform B + Both" 00
+  851 * 36	 04 04 BA 01 5E C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 00
 
-  857 * 556	 00 04 04 01 5F 08 "KWS4" 0B 02 0F 00 09 0C
+  852 * 556	 00 04 04 01 5F 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F0 03 00 80
@@ -5566,14 +5547,14 @@
 				00 00 80  00 00 00  F0 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  858 * 7	 03 04 01 5F 00 A0 00
-  859 * 40	 04 04 80 01 5F C5 "Platform A + Southern with Roof A" 00
-  860 * 47	 04 04 BA 01 5F C5 C3 9E 
+  853 * 7	 03 04 01 5F 00 A0 00
+  854 * 40	 04 04 80 01 5F C5 "Platform A + Southern with Roof A" 00
+  855 * 47	 04 04 BA 01 5F C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  861 * 556	 00 04 04 01 60 08 "KWS4" 0B 02 0F 00 09 0C
+  856 * 556	 00 04 04 01 60 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F2 03 00 80
@@ -5635,14 +5616,14 @@
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  862 * 7	 03 04 01 60 00 A0 00
-  863 * 40	 04 04 80 01 60 C5 "Platform B + Southern with Roof A" 00
-  864 * 47	 04 04 BA 01 60 C5 C3 9E 
+  857 * 7	 03 04 01 60 00 A0 00
+  858 * 40	 04 04 80 01 60 C5 "Platform B + Southern with Roof A" 00
+  859 * 47	 04 04 BA 01 60 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  865 * 556	 00 04 04 01 61 08 "KWS4" 0B 02 0F 00 09 0C
+  860 * 556	 00 04 04 01 61 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F0 03 00 80
@@ -5704,14 +5685,14 @@
 				00 00 80  00 00 00  F0 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  36 04 00 00 80
-  866 * 7	 03 04 01 61 00 A0 00
-  867 * 40	 04 04 80 01 61 C5 "Platform A + Southern with Roof B" 00
-  868 * 47	 04 04 BA 01 61 C5 C3 9E 
+  861 * 7	 03 04 01 61 00 A0 00
+  862 * 40	 04 04 80 01 61 C5 "Platform A + Southern with Roof B" 00
+  863 * 47	 04 04 BA 01 61 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
-  869 * 556	 00 04 04 01 62 08 "KWS4" 0B 02 0F 00 09 0C
+  864 * 556	 00 04 04 01 62 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F2 03 00 80
@@ -5773,14 +5754,14 @@
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00 80
-  870 * 7	 03 04 01 62 00 A0 00
-  871 * 40	 04 04 80 01 62 C5 "Platform B + Southern with Roof B" 00
-  872 * 47	 04 04 BA 01 62 C5 C3 9E 
+  865 * 7	 03 04 01 62 00 A0 00
+  866 * 40	 04 04 80 01 62 C5 "Platform B + Southern with Roof B" 00
+  867 * 47	 04 04 BA 01 62 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB 82 A8 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
-  873 * 556	 00 04 04 01 63 08 "KWS4" 0B 02 0F 00 09 0C
+  868 * 556	 00 04 04 01 63 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F1 03 00 80
@@ -5842,14 +5823,14 @@
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  874 * 7	 03 04 01 63 00 A0 00
-  875 * 40	 04 04 80 01 63 C5 "Platform A + Northern with Roof A" 00
-  876 * 47	 04 04 BA 01 63 C5 C3 9E 
+  869 * 7	 03 04 01 63 00 A0 00
+  870 * 40	 04 04 80 01 63 C5 "Platform A + Northern with Roof A" 00
+  871 * 47	 04 04 BA 01 63 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  877 * 556	 00 04 04 01 64 08 "KWS4" 0B 02 0F 00 09 0C
+  872 * 556	 00 04 04 01 64 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -5911,14 +5892,14 @@
 				00 00 80  00 00 00  EF 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  878 * 7	 03 04 01 64 00 A0 00
-  879 * 40	 04 04 80 01 64 C5 "Platform B + Northern with Roof A" 00
-  880 * 47	 04 04 BA 01 64 C5 C3 9E 
+  873 * 7	 03 04 01 64 00 A0 00
+  874 * 40	 04 04 80 01 64 C5 "Platform B + Northern with Roof A" 00
+  875 * 47	 04 04 BA 01 64 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  881 * 556	 00 04 04 01 65 08 "KWS4" 0B 02 0F 00 09 0C
+  876 * 556	 00 04 04 01 65 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F1 03 00 80
@@ -5980,14 +5961,14 @@
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  36 04 00 00 80
-  882 * 7	 03 04 01 65 00 A0 00
-  883 * 40	 04 04 80 01 65 C5 "Platform A + Northern with Roof B" 00
-  884 * 47	 04 04 BA 01 65 C5 C3 9E 
+  877 * 7	 03 04 01 65 00 A0 00
+  878 * 40	 04 04 80 01 65 C5 "Platform A + Northern with Roof B" 00
+  879 * 47	 04 04 BA 01 65 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
-  885 * 556	 00 04 04 01 66 08 "KWS4" 0B 02 0F 00 09 0C
+  880 * 556	 00 04 04 01 66 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -6049,14 +6030,14 @@
 				00 00 80  00 00 00  EF 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00 80
-  886 * 7	 03 04 01 66 00 A0 00
-  887 * 40	 04 04 80 01 66 C5 "Platform B + Northern with Roof B" 00
-  888 * 47	 04 04 BA 01 66 C5 C3 9E 
+  881 * 7	 03 04 01 66 00 A0 00
+  882 * 40	 04 04 80 01 66 C5 "Platform B + Northern with Roof B" 00
+  883 * 47	 04 04 BA 01 66 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EB B6 81 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
-  889 * 676	 00 04 04 01 67 08 "KWS4" 0B 02 0F 00 09 0C
+  884 * 676	 00 04 04 01 67 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F0 03 00 80
@@ -6130,14 +6111,14 @@
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  34 04 00 00 80
-  890 * 7	 03 04 01 67 00 A0 00
-  891 * 36	 04 04 80 01 67 C5 "Platform A + Both with Roof A" 00
-  892 * 47	 04 04 BA 01 67 C5 C3 9E 
+  885 * 7	 03 04 01 67 00 A0 00
+  886 * 36	 04 04 80 01 67 C5 "Platform A + Both with Roof A" 00
+  887 * 47	 04 04 BA 01 67 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  893 * 676	 00 04 04 01 68 08 "KWS4" 0B 02 0F 00 09 0C
+  888 * 676	 00 04 04 01 68 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -6211,14 +6192,14 @@
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  50 04 00 00 80
-  894 * 7	 03 04 01 68 00 A0 00
-  895 * 36	 04 04 80 01 68 C5 "Platform B + Both with Roof A" 00
-  896 * 47	 04 04 BA 01 68 C5 C3 9E 
+  889 * 7	 03 04 01 68 00 A0 00
+  890 * 36	 04 04 80 01 68 C5 "Platform B + Both with Roof A" 00
+  891 * 47	 04 04 BA 01 68 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " A" 00
 
-  897 * 676	 00 04 04 01 69 08 "KWS4" 0B 02 0F 00 09 0C
+  892 * 676	 00 04 04 01 69 08 "KWS4" 0B 02 0F 00 09 0C
    				FC 03 00 00 
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  F0 03 00 80
@@ -6292,14 +6273,14 @@
 				00 00 80  00 00 00  F2 03 00 80
 				00 00 00  06 10 03  32 04 00 00
 				00 00 0E  06 10 03  36 04 00 00 80
-  898 * 7	 03 04 01 69 00 A0 00
-  899 * 36	 04 04 80 01 69 C5 "Platform A + Both with Roof B" 00
-  900 * 47	 04 04 BA 01 69 C5 C3 9E 
+  893 * 7	 03 04 01 69 00 A0 00
+  894 * 36	 04 04 80 01 69 C5 "Platform A + Both with Roof B" 00
+  895 * 47	 04 04 BA 01 69 C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " A + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
-  901 * 676	 00 04 04 01 6A 08 "KWS4" 0B 02 0F 00 09 0C
+  896 * 676	 00 04 04 01 6A 08 "KWS4" 0B 02 0F 00 09 0C
 				FD 03 00 00
 				00 00 80  00 00 00  ED 03 00 80
 				00 00 80  00 00 00  EF 03 00 80
@@ -6373,16 +6354,16 @@
 				00 00 80  00 00 00  F1 03 00 80
 				0A 00 00  06 10 03  4E 04 00 00
 				0A 00 0E  06 10 03  36 04 00 00 80
-  902 * 7	 03 04 01 6A 00 A0 00
-  903 * 36	 04 04 80 01 6A C5 "Platform B + Both with Roof B" 00
-  904 * 47	 04 04 BA 01 6A C5 C3 9E 
+  897 * 7	 03 04 01 6A 00 A0 00
+  898 * 36	 04 04 80 01 6A C5 "Platform B + Both with Roof B" 00
+  899 * 47	 04 04 BA 01 6A C5 C3 9E 
 				EC 8A B9 EA B0 95 EC 9E A5 " B + "
 				EC 96 91 EC B8 A1 20 EB B6 84 EA B8 B0 " + "
 				EC A7 80 EB B6 95 " B" 00
 
 //PSD
 
-  905 * 234	 00 04 07 01 80 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
+  900 * 234	 00 04 07 01 80 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6409,21 +6390,22 @@
 				00 00 00  06 10 03  2E 04 00 00
 				04 00 03  01 10 10  8A 04 00 00
 				05 00 03  01 10 10  92 44 22 03 80
-  906 * 22	 02 04 B3 81 4A 00 FF 03 02 80 01 01 02 80 05 05 04 80 02 04 00 80
-  907 * 6	 07 01 01 02 00 01
-  908 * 22	 02 04 B2 81 4A 00 FF 03 FF 80 03 03 FE C9 01 01 FE CA 04 04 FE 80
-  909 * 6	 07 01 01 03 00 01
-//!!Warning (94): Redefining ID B2 not used since previous definition at sprite 908.
-  910 * 14	 02 04 B2 81 4A 00 FF 01 FF 80 03 03 FE 80
-  911 * 18	 02 04 B1 81 4A 00 FF 02 01 80 00 00 04 80 01 03 00 80
-  912 * 29	 02 04 B0 85 0C 00 FF FF 03 B3 00 14 00 14 00 B1 00 40 01 40 01 B2 00 41 01 41 01 03 00
-  913 * 7	 03 04 01 80 00 B0 00
-  914 * 16	 04 04 80 01 80 C4 "[KWS] " "PSD" 00
-  915 * 31	 04 04 80 01 80 C5 "High Platform A with PSD" 00
-  916 * 26	 04 04 BA 01 80 C5 C3 9E 
+  901 * 22	 02 04 B3 81 4A 00 FF 03 02 80 01 01 02 80 05 05 04 80 02 04 00 80
+  902 * 6	 07 01 01 02 00 01
+  903 * 22	 02 04 B2 81 4A 00 FF 03 FF 80 03 03 FE C9 01 01 FE CA 04 04 FE 80
+  904 * 6	 07 01 01 03 00 01
+//!!Warning (94): Redefining ID B2 not used since previous definition at sprite 903.
+  905 * 14	 02 04 B2 81 4A 00 FF 01 FF 80 03 03 FE 80
+  906 * 18	 02 04 BA 81 4A 00 FF 02 06 80 00 00 05 80 01 01 04 80
+  907 * 14	 02 04 B8 81 18 00 FF 01 01 80 03 03 BA 00
+  908 * 29	 02 04 B0 85 0C 00 FF FF 03 B3 00 14 00 14 00 B8 00 40 01 40 01 B2 00 41 01 41 01 03 00
+  909 * 7	 03 04 01 80 00 B0 00
+  910 * 16	 04 04 80 01 80 C4 "[KWS] PSD" 00
+  911 * 31	 04 04 80 01 80 C5 "High Platform A with PSD" 00
+  912 * 26	 04 04 BA 01 80 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + PSD" 00
 
-  917 * 234	 00 04 07 01 81 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  913 * 234	 00 04 07 01 81 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				00 09 03  10 01 10  8B 04 00 00
@@ -6448,12 +6430,12 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 80
-  918 * 7	 03 04 01 81 00 B0 00
-  919 * 31	 04 04 80 01 81 C5 "High Platform B with PSD" 00
-  920 * 26	 04 04 BA 01 81 C5 C3 9E 
+  914 * 7	 03 04 01 81 00 B0 00
+  915 * 31	 04 04 80 01 81 C5 "High Platform B with PSD" 00
+  916 * 26	 04 04 BA 01 81 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + PSD" 00
 
-  921 * 414	 00 04 07 01 82 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  917 * 414	 00 04 07 01 82 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6496,12 +6478,12 @@
 				0A 00 00  06 10 03  4A 04 00 00
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 80
-  922 * 7	 03 04 01 82 00 B0 00
-  923 * 31	 04 04 80 01 82 C5 "High Platform C with PSD" 00
-  924 * 26	 04 04 BA 01 82 C5 C3 9E 
+  918 * 7	 03 04 01 82 00 B0 00
+  919 * 31	 04 04 80 01 82 C5 "High Platform C with PSD" 00
+  920 * 26	 04 04 BA 01 82 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + PSD" 00
 
-  925 * 294	 00 04 07 01 83 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
+  921 * 294	 00 04 07 01 83 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6534,12 +6516,12 @@
 				04 00 03  01 10 10  8A 04 00 00
 				05 00 03  01 10 10  92 44 22 03
 				00 00 10  06 10 03  34 04 00 00 80
-  926 * 7	 03 04 01 83 00 B0 00
-  927 * 42	 04 04 80 01 83 C5 "High Platform A with PSD and Roof A" 00
-  928 * 37	 04 04 BA 01 83 C5 C3 9E 
+  922 * 7	 03 04 01 83 00 B0 00
+  923 * 42	 04 04 80 01 83 C5 "High Platform A with PSD and Roof A" 00
+  924 * 37	 04 04 BA 01 83 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + PSD + " EC A7 80 EB B6 95 " A" 00
 
-  929 * 294	 00 04 07 01 84 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  925 * 294	 00 04 07 01 84 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				00 09 03  10 01 10  8B 04 00 00
@@ -6570,12 +6552,12 @@
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 
 				0A 00 10  06 10 03  50 04 00 00 80
-  930 * 7	 03 04 01 84 00 B0 00
-  931 * 42	 04 04 80 01 84 C5 "High Platform B with PSD and Roof A" 00
-  932 * 37	 04 04 BA 01 84 C5 C3 9E 
+  926 * 7	 03 04 01 84 00 B0 00
+  927 * 42	 04 04 80 01 84 C5 "High Platform B with PSD and Roof A" 00
+  928 * 37	 04 04 BA 01 84 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + PSD + " EC A7 80 EB B6 95 " A" 00
 
-  933 * 534	 00 04 07 01 85 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  929 * 534	 00 04 07 01 85 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6630,12 +6612,12 @@
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 
 				0A 00 10  06 10 03  50 04 00 00 80
-  934 * 7	 03 04 01 85 00 B0 00
-  935 * 40	 04 04 80 01 85 C5 "High Platform C with PSD + Roof A" 00
-  936 * 37	 04 04 BA 01 85 C5 C3 9E 
+  930 * 7	 03 04 01 85 00 B0 00
+  931 * 40	 04 04 80 01 85 C5 "High Platform C with PSD + Roof A" 00
+  932 * 37	 04 04 BA 01 85 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + PSD + " EC A7 80 EB B6 95 " A" 00
 
-  937 * 294	 00 04 07 01 86 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
+  933 * 294	 00 04 07 01 86 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06
    				F4 03 00 00 
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6668,12 +6650,12 @@
 				04 00 03  01 10 10  8A 04 00 00
 				05 00 03  01 10 10  92 44 22 03
 				00 00 10  06 10 03  52 04 00 00 80
-  938 * 7	 03 04 01 86 00 B0 00
-  939 * 42	 04 04 80 01 86 C5 "High Platform A with PSD and Roof B" 00
-  940 * 37	 04 04 BA 01 86 C5 C3 9E 
+  934 * 7	 03 04 01 86 00 B0 00
+  935 * 42	 04 04 80 01 86 C5 "High Platform A with PSD and Roof B" 00
+  936 * 37	 04 04 BA 01 86 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " A + PSD + " EC A7 80 EB B6 95 " B" 00
 
-  941 * 294	 00 04 07 01 87 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  937 * 294	 00 04 07 01 87 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 0A 00  10 06 03  49 04 00 00
 				00 09 03  10 01 10  8B 04 00 00
@@ -6704,12 +6686,12 @@
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 
 				0A 00 10  06 10 03  52 04 00 00 80
-  942 * 7	 03 04 01 87 00 B0 00
-  943 * 42	 04 04 80 01 87 C5 "High Platform B with PSD and Roof B" 00
-  944 * 37	 04 04 BA 01 87 C5 C3 9E 
+  938 * 7	 03 04 01 87 00 B0 00
+  939 * 42	 04 04 80 01 87 C5 "High Platform B with PSD and Roof B" 00
+  940 * 37	 04 04 BA 01 87 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " B + PSD + " EC A7 80 EB B6 95 " B" 00
 
-  945 * 544	 00 04 07 01 88 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
+  941 * 544	 00 04 07 01 88 08 "KWS5" 0B 06 0F 00 16 06 00 17 03 18 18 00 09 06 
 				F4 03 00 00
 				00 00 00  10 06 03  2D 04 00 00
 				00 04 03  10 01 10  89 04 00 00
@@ -6765,161 +6747,177 @@
 				09 00 03  01 10 10  8C 04 00 00
 				0A 00 03  01 10 10  98 44 22 03 
 				0A 00 10  06 10 03  52 04 00 00 80
-  946 * 7	 03 04 01 88 00 B0 00
-  947 * 40	 04 04 80 01 88 C5 "High Platform C with PSD + Roof B" 00
-  948 * 37	 04 04 BA 01 88 C5 C3 9E 
+  942 * 7	 03 04 01 88 00 B0 00
+  943 * 40	 04 04 80 01 88 C5 "High Platform C with PSD + Roof B" 00
+  944 * 37	 04 04 BA 01 88 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " C + PSD + " EC A7 80 EB B6 95 " B" 00
 
 //Non-Track Platforms
 
-  949 * 46	 00 04 04 01 A0 08 "KWS6" 14 FF 15 FF 09 02 
+  945 * 46	 00 04 04 01 A0 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  2D 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  2E 04 00 00 80
-  950 * 7	 03 04 01 A0 00 05 00
-  951 * 32	 04 04 80 01 A0 C4 "[KWS] " "Non-Track Platforms" 00
-  952 * 38	 04 04 BA 01 A0 C4 C3 9E 
+  946 * 7	 03 04 01 A0 00 05 00
+  947 * 32	 04 04 80 01 A0 C4 "[KWS] " "Non-Track Platforms" 00
+  948 * 38	 04 04 BA 01 A0 C4 C3 9E 
 				"[KWS] " EC 84 A0 EB A1 9C 20 EC 97 86 EB 8A 94 20 EC 8A B9 EA B0 95 EC 9E A5 00
-  953 * 20	 04 04 80 01 A0 C5 "High Platform" 00
-  954 * 18	 04 04 BA 01 A0 C5 C3 9E 
+  949 * 20	 04 04 80 01 A0 C5 "High Platform" 00
+  950 * 18	 04 04 BA 01 A0 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 00
 
-  955 * 46	 00 04 04 01 A1 08 "KWS6" 14 FF 15 FF 09 02 
+  951 * 46	 00 04 04 01 A1 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 01  2F 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 01  30 04 00 00 80
-  956 * 7	 03 04 01 A1 00 05 00
-  957 * 19	 04 04 80 01 A1 C5 "Low Platform" 00
-  958 * 18	 04 04 BA 01 A1 C5 C3 9E 
+  952 * 7	 03 04 01 A1 00 05 00
+  953 * 19	 04 04 80 01 A1 C5 "Low Platform" 00
+  954 * 18	 04 04 BA 01 A1 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 00
 
-  959 * 46	 00 04 04 01 A2 08 "KWS6" 14 FF 15 FF 09 02 
+  955 * 46	 00 04 04 01 A2 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 01  31 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 01  32 04 00 00 80
-  960 * 7	 03 04 01 A2 00 05 00
-  961 * 27	 04 04 80 01 A2 C5 "Low Asphalt Platform" 00
-  962 * 31	 04 04 BA 01 A2 C5 C3 9E 
+  956 * 7	 03 04 01 A2 00 05 00
+  957 * 27	 04 04 80 01 A2 C5 "Low Asphalt Platform" 00
+  958 * 31	 04 04 BA 01 A2 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20 EC A0 80 EC 83 81 ED 99 88 00
 
-  963 * 66	 00 04 04 01 A3 08 "KWS6" 14 FF 15 FF 09 02 
+  959 * 66	 00 04 04 01 A3 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  2D 04 00 00
 				00 00 10  10 10 03  33 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  2E 04 00 00
 				00 00 10  10 10 03  34 04 00 00 80
-  964 * 7	 03 04 01 A3 00 05 00
-  965 * 32	 04 04 80 01 A3 C5 "High Platform with Roof A" 00
-  966 * 29	 04 04 BA 01 A3 C5 C3 9E 
+  960 * 7	 03 04 01 A3 00 05 00
+  961 * 32	 04 04 80 01 A3 C5 "High Platform with Roof A" 00
+  962 * 29	 04 04 BA 01 A3 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " A" 00
 
-  967 * 66	 00 04 04 01 A4 08 "KWS6" 14 FF 15 FF 09 02 
+  963 * 66	 00 04 04 01 A4 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  2F 04 00 00
 				00 00 0E  10 10 03  33 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  30 04 00 00
 				00 00 0E  10 10 03  34 04 00 00 80
-  968 * 7	 03 04 01 A4 00 05 00
-  969 * 31	 04 04 80 01 A4 C5 "Low Platform with Roof A" 00
-  970 * 29	 04 04 BA 01 A4 C5 C3 9E 
+  964 * 7	 03 04 01 A4 00 05 00
+  965 * 31	 04 04 80 01 A4 C5 "Low Platform with Roof A" 00
+  966 * 29	 04 04 BA 01 A4 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " A" 00
 
-  971 * 66	 00 04 04 01 A5 08 "KWS6" 14 FF 15 FF 09 02 
+  967 * 66	 00 04 04 01 A5 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  31 04 00 00
 				00 00 0E  10 10 03  33 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  32 04 00 00
 				00 00 0E  10 10 03  34 04 00 00 80
-  972 * 7	 03 04 01 A5 00 05 00
-  973 * 39	 04 04 80 01 A5 C5 "Low Asphalt Platform with Roof A" 00
-  974 * 42	 04 04 BA 01 A5 C5 C3 9E 
+  968 * 7	 03 04 01 A5 00 05 00
+  969 * 39	 04 04 80 01 A5 C5 "Low Asphalt Platform with Roof A" 00
+  970 * 42	 04 04 BA 01 A5 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20 
 				EC A0 80 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " A" 00
 
-  975 * 66	 00 04 04 01 A6 08 "KWS6" 14 FF 15 FF 09 02 
+  971 * 66	 00 04 04 01 A6 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  2D 04 00 00
 				00 00 10  10 10 03  35 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  2E 04 00 00
 				00 00 10  10 10 03  36 04 00 00 80
-  976 * 7	 03 04 01 A6 00 05 00
-  977 * 32	 04 04 80 01 A6 C5 "High Platform with Roof B" 00
-  978 * 29	 04 04 BA 01 A6 C5 C3 9E 
+  972 * 7	 03 04 01 A6 00 05 00
+  973 * 32	 04 04 80 01 A6 C5 "High Platform with Roof B" 00
+  974 * 29	 04 04 BA 01 A6 C5 C3 9E 
 				EA B3 A0 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " B" 00
 
-  979 * 66	 00 04 04 01 A7 08 "KWS6" 14 FF 15 FF 09 02 
+  975 * 66	 00 04 04 01 A7 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  2F 04 00 00
 				00 00 0E  10 10 03  35 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  30 04 00 00
 				00 00 0E  10 10 03  36 04 00 00 80
-  980 * 7	 03 04 01 A7 00 05 00
-  981 * 31	 04 04 80 01 A7 C5 "Low Platform with Roof B" 00
-  982 * 29	 04 04 BA 01 A7 C5 C3 9E 
+  976 * 7	 03 04 01 A7 00 05 00
+  977 * 31	 04 04 80 01 A7 C5 "Low Platform with Roof B" 00
+  978 * 29	 04 04 BA 01 A7 C5 C3 9E 
 				EC A0 80 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " B" 00
 
-  983 * 66	 00 04 04 01 A8 08 "KWS6" 14 FF 15 FF 09 02 
+  979 * 66	 00 04 04 01 A8 08 "KWS6" 14 FF 15 FF 09 02 
    				8D 0F 00 00 
 				00 00 00  10 10 03  31 04 00 00
 				00 00 0E  10 10 03  35 04 00 00 80
 				8D 0F 00 00
 				00 00 00  10 10 03  32 04 00 00
 				00 00 0E  10 10 03  36 04 00 00 80
-  984 * 7	 03 04 01 A8 00 05 00
-  985 * 39	 04 04 80 01 A8 C5 "Low Asphalt Platform with Roof B" 00
-  986 * 42	 04 04 BA 01 A8 C5 C3 9E 
+  980 * 7	 03 04 01 A8 00 05 00
+  981 * 39	 04 04 80 01 A8 C5 "Low Asphalt Platform with Roof B" 00
+  982 * 42	 04 04 BA 01 A8 C5 C3 9E 
 				EC 95 84 EC 8A A4 ED 8C 94 ED 8A B8 20 
 				EC A0 80 EC 83 81 ED 99 88 " + " EC A7 80 EB B6 95 " B" 00
 
 //Objects
 
 //Subway Exits
-  987 * 4	 01 0F 08 01
-  988 kws\sprites\sprites.png       8bpp   4 226 40 26 -21  -3 normal
-  989 kws\sprites\sprites.png       8bpp  46 226 40 26 -17  -3 normal
-  990 kws\sprites\sprites.png       8bpp   4 255 38 26 -17  -1 normal
-  991 kws\sprites\sprites.png       8bpp  46 255 38 26 -17  -1 normal
-  992 kws\sprites\sprites.png       8bpp   4 309 40 26 -21  -3 normal
-  993 kws\sprites\sprites.png       8bpp  46 309 40 26 -17  -3 normal
-  994 kws\sprites\sprites.png       8bpp   4 338 38 26 -17  -1 normal
-  995 kws\sprites\sprites.png       8bpp  46 338 38 26 -17  -1 normal
-  996 * 17	 02 0F 00 00 \d1420 00 00 00 80 00 00 10 10 10
-  997 * 17	 02 0F 01 00 \d1420 01 00 00 80 00 00 10 10 10
-  998 * 17	 02 0F 02 00 \d1420 02 00 00 80 00 00 10 10 10
-  999 * 17	 02 0F 03 00 \d1420 03 00 00 80 00 00 10 10 10
- 1000 * 17	 02 0F 04 00 \d1420 04 00 00 80 00 00 10 10 10
- 1001 * 17	 02 0F 05 00 \d1420 05 00 00 80 00 00 10 10 10
- 1002 * 17	 02 0F 06 00 \d1420 06 00 00 80 00 00 10 10 10
- 1003 * 17	 02 0F 07 00 \d1420 07 00 00 80 00 00 10 10 10
+  983 * 4	 01 0F 08 01
+  984 sprites\sprites.png       8bpp   4 226 40 26 -21  -3 normal
+  985 sprites\sprites.png       8bpp  46 226 40 26 -17  -3 normal
+  986 sprites\sprites.png       8bpp   4 255 38 26 -17  -1 normal
+  987 sprites\sprites.png       8bpp  46 255 38 26 -17  -1 normal
+  988 sprites\sprites.png       8bpp   4 309 40 26 -21  -3 normal
+  989 sprites\sprites.png       8bpp  46 309 40 26 -17  -3 normal
+  990 sprites\sprites.png       8bpp   4 338 38 26 -17  -1 normal
+  991 sprites\sprites.png       8bpp  46 338 38 26 -17  -1 normal
+//!!Error (56): Offset 8: Sprite set 00 does not appear in the preceding Action 1 (sprite 983).
+  992 * 17	 02 0F 00 00 \d1420 00 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 01 does not appear in the preceding Action 1 (sprite 983).
+  993 * 17	 02 0F 01 00 \d1420 01 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 02 does not appear in the preceding Action 1 (sprite 983).
+  994 * 17	 02 0F 02 00 \d1420 02 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 03 does not appear in the preceding Action 1 (sprite 983).
+  995 * 17	 02 0F 03 00 \d1420 03 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 04 does not appear in the preceding Action 1 (sprite 983).
+  996 * 17	 02 0F 04 00 \d1420 04 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 05 does not appear in the preceding Action 1 (sprite 983).
+  997 * 17	 02 0F 05 00 \d1420 05 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 06 does not appear in the preceding Action 1 (sprite 983).
+  998 * 17	 02 0F 06 00 \d1420 06 00 00 80 00 00 10 10 10
+//!!Error (56): Offset 8: Sprite set 07 does not appear in the preceding Action 1 (sprite 983).
+  999 * 17	 02 0F 07 00 \d1420 07 00 00 80 00 00 10 10 10
 
 
- 1004 * 25	 04 48 FF 01 00 D0 "[KWS] Subway Exits" 00
- 1005 * 19	 04 48 FF 01 01 D0 "Subway Exits" 00
- 1006 * 28	 04 48 FF 01 02 D0 "Subway Exits" " (Korail)" 00
- 1007 * 37	 04 48 FF 01 00 D0 C3 9E "[KWS] "
+ 1000 * 25	 04 48 FF 01 00 D0 "[KWS] Subway Exits" 00
+ 1001 * 19	 04 48 FF 01 01 D0 "Subway Exits" 00
+ 1002 * 28	 04 48 FF 01 02 D0 "Subway Exits" " (Korail)" 00
+ 1003 * 37	 04 48 FF 01 00 D0 C3 9E "[KWS] "
 				EC A7 80 ED 95 98 EC B2 A0 EC 97 AD 20
 				EC B6 9C EC 9E 85 EA B5 AC 00
- 1008 * 31	 04 48 FF 01 01 D0 C3 9E
+ 1004 * 31	 04 48 FF 01 01 D0 C3 9E
 				EC A7 80 ED 95 98 EC B2 A0 EC 97 AD 20
 				EC B6 9C EC 9E 85 EA B5 AC 00
- 1009 * 40	 04 48 FF 01 02 D0 C3 9E
+ 1005 * 40	 04 48 FF 01 02 D0 C3 9E
 				EC A7 80 ED 95 98 EC B2 A0 EC 97 AD 20
 				EC B6 9C EC 9E 85 EA B5 AC " (Korail)" 00
 
- 1010 * 24	 00 0F 07 01 00 08 "KWO1" 09 00 D4 0A 01 D4 0B 0F 0C 11 0D 01 17 04
- 1011 * 22	 02 0F A0 81 48 00 FF 03 00 00 00 00 01 00 01 01 02 00 02 02 03 00
- 1012 * 7	 03 0F 01 00 00 A0 00
+ 1006 * 24	 00 0F 07 01 00 08 "KWO1" 09 00 D4 0A 01 D4 0B 0F 0C 11 0D 01 17 04
+ 1007 * 22	 02 0F A0 81 48 00 FF 03 00 00 00 00 01 00 01 01 02 00 02 02 03 00
+ 1008 * 7	 03 0F 01 00 00 A0 00
 
- 1013 * 24	 00 0F 07 01 01 08 "KWO1" 09 00 D4 0A 02 D4 0B 0F 0C 11 0D 01 17 04
- 1014 * 22	 02 0F A0 81 48 00 FF 03 04 00 00 00 05 00 01 01 06 00 02 02 07 00
- 1015 * 7	 03 0F 01 01 00 A0 00
+ 1009 * 24	 00 0F 07 01 01 08 "KWO1" 09 00 D4 0A 02 D4 0B 0F 0C 11 0D 01 17 04
+ 1010 * 22	 02 0F A0 81 48 00 FF 03 04 00 00 00 05 00 01 01 06 00 02 02 07 00
+ 1011 * 7	 03 0F 01 01 00 A0 00
+//!!Warning (97): Set 00 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 01 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 02 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 03 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 04 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 05 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 06 defined by the previous Action 1 (sprite 983) has not been used.
+//!!Warning (97): Set 07 defined by the previous Action 1 (sprite 983) has not been used.
 //!!For feature 4 the following cargoIDs have not been used since their most recent definition:
-//!!7F (last defined at sprite 198)
+//!!7F (last defined at sprite 193)
